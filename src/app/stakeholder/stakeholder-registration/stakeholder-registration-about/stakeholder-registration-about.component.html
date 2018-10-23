@@ -1,0 +1,64 @@
+<form [formGroup]="form">
+
+  <h3 i18n>About Yourself</h3>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_aboutme')"
+    i18n-rsLabel rsLabel="Tell us about yourself">
+  </rs-textarea>
+
+  <h3 i18n>Social Media</h3>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Website"
+           (input)="formUtil.formatLowerCase(regAttrForm.get('csc_website'))"
+           [formControl]="regAttrForm.get('csc_website')">
+
+    <mat-error
+      *ngIf="regAttrForm.get('csc_website').hasError('url')"
+      i18n>Invalid url (requires http://)
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Facebook"
+           (input)="formUtil.formatLowerCase(regAttrForm.get('csc_smfacebook'))"
+           [formControl]="regAttrForm.get('csc_smfacebook')">
+
+    <mat-error
+      *ngIf="regAttrForm.get('csc_smfacebook').hasError('url')"
+      i18n>Invalid url (requires http://)
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Twitter"
+           (input)="formUtil.formatLowerCase(regAttrForm.get('csc_smtwitter'))"
+           [formControl]="regAttrForm.get('csc_smtwitter')">
+
+    <mat-error
+      *ngIf="regAttrForm.get('csc_smtwitter').hasError('url')"
+      i18n>Invalid url (requires http://)
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="LinkedIn"
+           (input)="formUtil.formatLowerCase(regAttrForm.get('csc_smlinkedin'))"
+           [formControl]="regAttrForm.get('csc_smlinkedin')">
+
+    <mat-error
+      *ngIf="regAttrForm.get('csc_smlinkedin').hasError('url')"
+      i18n>Invalid url (requires http://)
+    </mat-error>
+  </mat-form-field>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

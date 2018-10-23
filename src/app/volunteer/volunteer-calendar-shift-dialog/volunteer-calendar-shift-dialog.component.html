@@ -1,0 +1,22 @@
+<h2 mat-dialog-title i18n>{{shift.title}} - {{formatDate(shift.start)}}</h2>
+
+<mat-dialog-content [formGroup]="form">
+  <h4 i18n>Scheduled Start Time - {{formatTime(shift.meta.scheduledStart)}}</h4>
+  <mat-form-field>
+    <label>Actual Start Time</label>
+    <input matInput [formControl]="form.get('startTime')" [ngxTimepicker]="pickerStart">
+    <ngx-material-timepicker #pickerStart></ngx-material-timepicker>
+  </mat-form-field>
+  <h4 i18n>Scheduled End Time - {{formatTime(shift.meta.scheduledEnd)}}</h4>
+  <mat-form-field>
+    <label>Actual End Time</label>
+    <input matInput [formControl]="form.get('endTime')" [ngxTimepicker]="pickerEnd">
+    <ngx-material-timepicker #pickerEnd></ngx-material-timepicker>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions class="button-group">
+  <button mat-stroked-button color="primary" [mat-dialog-close]="true" i18n>Close</button>
+  <button mat-raised-button color="primary" (click)="submit()" i18n>Submit
+  </button>
+</mat-dialog-actions>

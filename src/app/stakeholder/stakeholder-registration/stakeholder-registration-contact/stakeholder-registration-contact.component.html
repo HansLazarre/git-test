@@ -1,0 +1,155 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Contact Information</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="First Name"
+           [formControl]="contactAttrForm.get('firstname')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Middle Name"
+           [formControl]="contactAttrForm.get('middlename')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Last Name"
+           [formControl]="contactAttrForm.get('lastname')">
+  </mat-form-field>
+
+  <h3 i18n>Physical Address</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_line1'))"
+           [formControl]="contactAttrForm.get('address3_line1')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_line2'))"
+           [formControl]="contactAttrForm.get('address3_line2')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_city'))"
+           [formControl]="contactAttrForm.get('address3_city')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_postofficebox'))"
+           [formControl]="contactAttrForm.get('address3_postofficebox')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_stateorprovince'))"
+           [formControl]="contactAttrForm.get('address3_stateorprovince')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_postalcode'))"
+           [formControl]="contactAttrForm.get('address3_postalcode')">
+
+    <mat-error
+      *ngIf="contactAttrForm.get('address3_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address3_country'))"
+           [formControl]="contactAttrForm.get('address3_country')">
+  </mat-form-field>
+
+
+  <h3 i18n>Mailing Address</h3>
+
+  <div class="form-field-margin">
+    <mat-checkbox color="primary" [value]="true" [formControl]="contactAttrForm.get('csc_stakeholdersameasmailing')"
+                  i18n>Mailing Address is the same as Physical Address
+    </mat-checkbox>
+  </div>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_street1')">
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_street1'))"
+           [formControl]="contactAttrForm.get('csc_street1')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_street2')">
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_street2'))"
+           [formControl]="contactAttrForm.get('csc_street2')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_city')">
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_city'))"
+           [formControl]="contactAttrForm.get('csc_city')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_pobox')">
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_pobox'))"
+           [formControl]="contactAttrForm.get('csc_pobox')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_provinceterritory')">
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_provinceterritory'))"
+           [formControl]="contactAttrForm.get('csc_provinceterritory')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_postalcode')">
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_postalcode'))"
+           [formControl]="contactAttrForm.get('csc_postalcode')">
+
+    <mat-error
+      *ngIf="contactAttrForm.get('csc_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_countryregion')">
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('csc_countryregion'))"
+           [formControl]="contactAttrForm.get('csc_countryregion')">
+  </mat-form-field>
+
+  <h3 i18n>Telephone</h3>
+
+  <rs-telephone
+    [rsRequired]="true"
+    [rsFormControl]="contactAttrForm.get('csc_stakeholderphone1')"
+    i18n-rsLabel rsLabel="Primary Telephone">
+  </rs-telephone>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Primary Extension"
+           [formControl]="contactAttrForm.get('csc_stakeholderphone1ext1')">
+  </mat-form-field>
+
+  <rs-telephone
+    [rsFormControl]="contactAttrForm.get('csc_stakeholderphone2')"
+    i18n-rsLabel rsLabel="Secondary Telephone">
+  </rs-telephone>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Secondary Extension"
+           [formControl]="contactAttrForm.get('csc_stakeholderphone2ext1')">
+  </mat-form-field>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

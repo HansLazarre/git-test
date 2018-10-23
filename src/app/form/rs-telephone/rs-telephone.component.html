@@ -1,0 +1,18 @@
+<div class="form-group-margin" *ngIf="rsFormControl">
+  <mat-form-field>
+    <input
+      matInput
+      type="tel"
+      [required]="rsRequired"
+      placeholder="{{rsLabel}}"
+      (input)="formUtil.formatPhone(rsFormControl)"
+      [formControl]="rsFormControl">
+
+    <mat-hint i18n>Please enter digits only</mat-hint>
+
+    <mat-error
+      *ngIf="rsFormControl.hasError('phone')"
+      i18n>Invalid phone (requires 10 digits)
+    </mat-error>
+  </mat-form-field>
+</div>

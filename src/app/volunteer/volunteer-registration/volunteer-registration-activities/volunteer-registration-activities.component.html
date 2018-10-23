@@ -1,0 +1,109 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Volunteer Activities</h3>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_applyingfor'))">
+
+    <h5 i18n>What are you applying for?</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_applyingfor')">
+
+      <mat-radio-button color="primary" [value]="this.ApplyingFor.CAC"
+                        i18n>CAC
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.ApplyingFor.REAC"
+                        i18n>REAC
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.ApplyingFor.General"
+                        i18n>General Volunteering
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <ng-container *ngIf="regOptsForm.get('csc_applyingfor').value === this.ApplyingFor.General">
+
+    <h5 i18n>Applying For</h5>
+
+
+    <div class="form-field-margin">
+      <div xLayout="row" fxLayout.xs="column">
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityreligiousprograms')"
+                       i18n-rsLabel rsLabel="Religious Programs"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activitycounselling')"
+                       i18n-rsLabel rsLabel="Counselling/Mentoring"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityeducation')"
+                       i18n-rsLabel rsLabel="Education"></rs-checkbox>
+        </div>
+      </div>
+
+      <div xLayout="row" fxLayout.xs="column">
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityartsandcrafts')"
+                       i18n-rsLabel rsLabel="Arts and Crafts"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activitynonsecurityescort')"
+                       i18n-rsLabel rsLabel="Non-Security Escort"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityrestorativejustice')"
+                       i18n-rsLabel rsLabel="Restorative Justice"></rs-checkbox>
+        </div>
+      </div>
+
+      <div xLayout="row" fxLayout.xs="column">
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityleisure')"
+                       i18n-rsLabel rsLabel="Leisure Activities"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityaboriginaloffenders')"
+                       i18n-rsLabel rsLabel="Aboriginal offenders"></rs-checkbox>
+        </div>
+
+        <div fxFlex>
+          <rs-checkbox [rsFormControl]="regAttrForm.get('csc_activityadministrative')"
+                       i18n-rsLabel rsLabel="Administrative"></rs-checkbox>
+        </div>
+      </div>
+    </div>
+
+    <rs-textarea
+      [rsFormControl]="regAttrForm.get('csc_activityotherspecify')"
+      i18n-rsLabel rsLabel="Other">
+    </rs-textarea>
+
+    <div *ngIf="this.form.get('Registration').hasError('applyingFor')"
+         class="mat-error form-field-margin"
+         i18n>Please choose a reason for applying
+    </div>
+
+  </ng-container>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_activityreasonsforchoice')"
+    i18n-rsLabel rsLabel="Please provide reasons for your choice(s)">
+  </rs-textarea>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

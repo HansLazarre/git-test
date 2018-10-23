@@ -1,0 +1,9 @@
+<mat-form-field class="rs-full-width" *ngIf="rsFormControl">
+  <textarea matTextareaAutosize
+            matInput
+            class="rs-textarea"
+            placeholder="{{rsLabel}}"
+            [required]="rsRequired"
+            [formControl]="rsFormControl"></textarea>
+  <mat-hint>{{rsHint}}</mat-hint>
+</mat-form-field>

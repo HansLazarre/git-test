@@ -1,0 +1,24 @@
+<form>
+
+  <h3 i18n>Agreement</h3>
+
+  <div class="form-group-margin">
+    <rs-checkbox [rsRequired]="true" i18n-rsLabel
+                 rsLabel="I hereby certify that the information I provided is true and correct to the best of my
+                     knowledge. I understand that a false statement may disqualify me from the application process."
+                 [rsFormControl]="regAttrForm.get('csc_acknowledgeandsubmit')"></rs-checkbox>
+  </div>
+
+  <div class="form-group-margin">
+    <rs-checkbox [rsRequired]="true" i18n-rsLabel rsLabel="I agree to the terms and conditions."
+                 [rsFormControl]="regAttrForm.get('csc_agreetotermsandconditions')"></rs-checkbox>
+  </div>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" (click)="finish()" [disabled]="sending" i18n>Finish</button>
+  </div>
+
+</form>

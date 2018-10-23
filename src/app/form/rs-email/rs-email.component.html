@@ -1,0 +1,14 @@
+<mat-form-field *ngIf="rsFormControl">
+  <input
+    matInput
+    type="email"
+    [required]="rsRequired"
+    placeholder="{{rsLabel}}"
+    (input)="formUtil.formatLowerCase(rsFormControl)"
+    [formControl]="rsFormControl">
+
+  <mat-error
+    *ngIf="rsFormControl.hasError('email')"
+    i18n>Invalid email address
+  </mat-error>
+</mat-form-field>

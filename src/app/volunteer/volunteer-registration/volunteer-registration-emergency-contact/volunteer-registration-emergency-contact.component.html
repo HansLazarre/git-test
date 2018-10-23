@@ -1,0 +1,155 @@
+<form [formGroup]="form">
+
+  <h3 i18n>First Emergency Contact</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Name(s)"
+           [formControl]="regAttrForm.get('csc_emergencycontact1name')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Address"
+           [formControl]="regAttrForm.get('csc_emergencycontact1address')">
+  </mat-form-field>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_emergencycontact1phone1type'))">
+
+    <h5 i18n>Primary Telephone</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_emergencycontact1phone1type')">
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Home"
+                        i18n>Home
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Work"
+                        i18n>Work
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Cell"
+                        i18n>Cell
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <rs-telephone
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_emergencycontact1phone1number')"
+    i18n-rsLabel rsLabel="Primary Telephone">
+  </rs-telephone>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_emergencycontact1phone2type'))">
+
+    <h5 i18n>Secondary Telephone</h5>
+
+    <mat-radio-group class="rs-radio-group"
+                     [formControl]="regOptsForm.get('csc_emergencycontact1phone2type')">
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Home"
+                        i18n>Home
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Work"
+                        i18n>Work
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Cell"
+                        i18n>Cell
+      </mat-radio-button>
+
+    </mat-radio-group>
+  </div>
+
+  <rs-telephone
+    [rsFormControl]="regAttrForm.get('csc_emergencycontact1phone2number')"
+    i18n-rsLabel rsLabel="Secondary Telephone">
+  </rs-telephone>
+
+
+  <h3 i18n>Second Emergency Contact</h3>
+
+  <div class="form-field-margin">
+    <mat-checkbox color="primary" [value]="true"
+                  [formControl]="form.get('secondEmergencyContact')"
+                  i18n>Second Emergency Contact
+    </mat-checkbox>
+  </div>
+
+  <mat-form-field *ngIf="regAttrForm.get('csc_emergencycontact2name')">
+    <input matInput required i18n-placeholder placeholder="Name(s)"
+           [formControl]="regAttrForm.get('csc_emergencycontact2name')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="regAttrForm.get('csc_emergencycontact2address')">
+    <input matInput required i18n-placeholder placeholder="Address"
+           [formControl]="regAttrForm.get('csc_emergencycontact2address')">
+  </mat-form-field>
+
+
+  <div class="form-group-margin"
+       *ngIf="regOptsForm.get('csc_emergencycontact2phone1type')"
+       [ngClass]="fieldClass(regOptsForm.get('csc_emergencycontact2phone1type'))">
+
+    <h5 i18n>Primary Telephone</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_emergencycontact2phone1type')">
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Home"
+                        i18n>Home
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Work"
+                        i18n>Work
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Cell"
+                        i18n>Cell
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <rs-telephone
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_emergencycontact2phone1number')"
+    i18n-rsLabel rsLabel="Primary Telephone">
+  </rs-telephone>
+
+  <div class="form-group-margin"
+       *ngIf="regOptsForm.get('csc_emergencycontact2phone2type')"
+       [ngClass]="fieldClass(regOptsForm.get('csc_emergencycontact2phone2type'))">
+
+    <h5 i18n>Secondary Telephone</h5>
+
+    <mat-radio-group class="rs-radio-group"
+                     [formControl]="regOptsForm.get('csc_emergencycontact2phone2type')">
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Home"
+                        i18n>Home
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Work"
+                        i18n>Work
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.PhoneTypes.Cell"
+                        i18n>Cell
+      </mat-radio-button>
+
+    </mat-radio-group>
+  </div>
+
+  <rs-telephone
+    [rsFormControl]="regAttrForm.get('csc_emergencycontact2phone2number')"
+    i18n-rsLabel rsLabel="Secondary Telephone">
+  </rs-telephone>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

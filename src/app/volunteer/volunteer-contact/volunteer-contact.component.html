@@ -1,0 +1,216 @@
+<form [formGroup]="form">
+
+  <h1 i18n>Volunteer Contact Information</h1>
+
+  <h3 i18n>Personal Information</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="First Name"
+           [formControl]="contactAttrForm.get('firstname')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Middle Name"
+           [formControl]="contactAttrForm.get('middlename')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Last Name"
+           [formControl]="contactAttrForm.get('lastname')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Surname at Birth"
+           [formControl]="contactAttrForm.get('csc_surnameatbirth')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Citizenship"
+           [formControl]="contactAttrForm.get('csc_citizenship')">
+  </mat-form-field>
+
+
+  <div class="form-group-margin" [ngClass]="fieldClass(contactOptsForm.get('csc_sex'))">
+
+    <h5 i18n>Gender</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="contactOptsForm.get('csc_sex')">
+
+      <mat-radio-button color="primary" [value]="Gender.Male"
+                        i18n>Male
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="Gender.Female"
+                        i18n>Female
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="Gender.Other"
+                        i18n>Other
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field *ngIf="contactAttrForm.get('csc_sexother')">
+    <input matInput required i18n-placeholder placeholder="Other"
+           [formControl]="contactAttrForm.get('csc_sexother')">
+  </mat-form-field>
+
+
+  <div class="form-group-margin rs-required">
+    <h5 i18n>Languages</h5>
+
+    <rs-checkbox-opts i18n-rsLabel rsLabel="English"
+                      [rsFormControl]="contactOptsForm.get('csc_speaksenglish')"></rs-checkbox-opts>
+
+
+    <rs-checkbox-opts i18n-rsLabel rsLabel="French"
+                      [rsFormControl]="contactOptsForm.get('csc_speaksfrench')"></rs-checkbox-opts>
+  </div>
+
+  <div *ngIf="form.get('Contact').hasError('language')" class="mat-error form-field-margin"
+       i18n>Please select a Language or enter Other Languages
+  </div>
+
+
+  <h3 i18n>Physical Address</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_line1'))"
+           [formControl]="contactAttrForm.get('address1_line1')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_line2'))"
+           [formControl]="contactAttrForm.get('address1_line2')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_city'))"
+           [formControl]="contactAttrForm.get('address1_city')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_postofficebox'))"
+           [formControl]="contactAttrForm.get('address1_postofficebox')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_stateorprovince'))"
+           [formControl]="contactAttrForm.get('address1_stateorprovince')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_postalcode'))"
+           [formControl]="contactAttrForm.get('address1_postalcode')">
+
+    <mat-error
+      *ngIf="contactAttrForm.get('address1_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address1_country'))"
+           [formControl]="contactAttrForm.get('address1_country')">
+  </mat-form-field>
+
+
+  <h3 i18n>Mailing Address</h3>
+
+  <div class="form-field-margin">
+    <mat-checkbox color="primary" [value]="true"
+                  [formControl]="contactAttrForm.get('csc_mailingaddressissameasphysicaladdress')"
+                  i18n>Mailing Address is the same as Physical Address
+    </mat-checkbox>
+  </div>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_line1')">
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_line1'))"
+           [formControl]="contactAttrForm.get('address2_line1')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_line2')">
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_line2'))"
+           [formControl]="contactAttrForm.get('address2_line2')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_city')">
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_city'))"
+           [formControl]="contactAttrForm.get('address2_city')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_postofficebox')">
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_postofficebox'))"
+           [formControl]="contactAttrForm.get('address2_postofficebox')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_stateorprovince')">
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_stateorprovince'))"
+           [formControl]="contactAttrForm.get('address2_stateorprovince')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_postalcode')">
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_postalcode'))"
+           [formControl]="contactAttrForm.get('address2_postalcode')">
+
+    <mat-error
+      *ngIf="contactAttrForm.get('address2_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field *ngIf="contactAttrForm.get('address2_country')">
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(contactAttrForm.get('address2_country'))"
+           [formControl]="contactAttrForm.get('address2_country')">
+  </mat-form-field>
+
+
+  <h3 i18n>Telephone</h3>
+
+  <rs-telephone
+    [rsRequired]="true"
+    [rsFormControl]="contactAttrForm.get('telephone2')"
+    i18n-rsLabel rsLabel="Home Telephone">
+  </rs-telephone>
+
+  <rs-telephone
+    [rsFormControl]="contactAttrForm.get('telephone1')"
+    i18n-rsLabel rsLabel="Business Telephone">
+  </rs-telephone>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Business Extension"
+           [formControl]="contactAttrForm.get('csc_businessphoneextension')">
+  </mat-form-field>
+
+  <rs-telephone
+    [rsFormControl]="contactAttrForm.get('csc_otherphone')"
+    i18n-rsLabel rsLabel="Other Telephone">
+  </rs-telephone>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Other Extension"
+           [formControl]="contactAttrForm.get('csc_otherphoneextension')">
+  </mat-form-field>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-raised-button color="primary" (click)="finish()" [disabled]="sending" i18n>Submit</button>
+  </div>
+</form>

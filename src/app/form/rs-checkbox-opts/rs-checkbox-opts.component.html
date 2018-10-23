@@ -1,0 +1,8 @@
+<mat-checkbox
+  *ngIf="rsFormControl"
+  color="primary"
+  [checked]="checked"
+  [ngClass]="displayFieldCss()"
+  [disabled]="false"
+  (change)="customOnChange($event)">{{rsLabel}}
+</mat-checkbox>

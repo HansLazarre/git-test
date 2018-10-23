@@ -1,0 +1,39 @@
+<h1 i18n>My Organizations</h1>
+
+<div class="mat-elevation-z0">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Name</th>
+      <td mat-cell *matCellDef="let organization">
+        <a routerLink="/organization-update/{{organization.id}}"
+           i18n-matTooltip matTooltip="Update Organization" i18n-aria-label aria-label="Update Organization">
+          {{organization.name}}</a>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Address</th>
+      <td mat-cell *matCellDef="let organization">
+        {{organization.address}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Email</th>
+      <td mat-cell *matCellDef="let organization">
+        {{organization.email}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="telephone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Telephone</th>
+      <td mat-cell *matCellDef="let organization">
+        {{organization.telephone}}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

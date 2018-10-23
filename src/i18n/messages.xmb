@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="659168587734151745"><source>app/shared/features/features.component.html:4</source>Volunteer schedules</msg>
+  <msg id="5433782699501161466"><source>app/shared/features/features.component.html:5</source><source>app/shared/features/features.component.html:11</source><source>app/shared/features/features.component.html:17</source>Schedule</msg>
+  <msg id="2832904440935015097"><source>app/shared/features/features.component.html:6</source>Login to view your schedule</msg>
+  <msg id="2446117790692479672"><source>app/shared/features/features.component.html:10</source>Resources</msg>
+  <msg id="1333232745618537121"><source>app/shared/features/features.component.html:12</source>Document repository of resource material including training material</msg>
+  <msg id="2476241055570612068"><source>app/shared/features/features.component.html:16</source>Discussion Forums</msg>
+  <msg id="2727221727129423778"><source>app/shared/features/features.component.html:18</source>Take part in the online community</msg>
+  <msg id="2049347549896162898"><source>app/form/rs-email/rs-email.component.html:12,13</source>Invalid email address
+  </msg>
+  <msg id="4500496258962104627"><source>app/form/rs-telephone/rs-telephone.component.html:11</source>Please enter digits only</msg>
+  <msg id="8976500551943194537"><source>app/form/rs-telephone/rs-telephone.component.html:15,16</source>Invalid phone (requires 10 digits)
+    </msg>
+  <msg id="2723780014471073049"><source>app/form/rs-yes-no/rs-yes-no.component.html:7,8</source><source>app/form/rs-yes-no-opts/rs-yes-no-opts.component.html:7,8</source>Yes
+    </msg>
+  <msg id="4475723102028531948"><source>app/form/rs-yes-no/rs-yes-no.component.html:10,11</source><source>app/form/rs-yes-no-opts/rs-yes-no-opts.component.html:10,11</source>No
+    </msg>
+  <msg id="2102825898069375693"><source>app/shared/navigation/navigation.component.html:11</source>Menu</msg>
+  <msg id="2821179408673282599"><source>app/shared/navigation/navigation.component.html:16</source><source>app/shared/navigation/navigation.component.html:87</source><source>app/shared/navigation/navigation.component.html:88</source><source>app/shared/navigation/navigation.component.html:93</source><source>app/shared/navigation/navigation.component.html:125</source>Home</msg>
+  <msg id="8382569030592481090"><source>app/shared/navigation/navigation.component.html:22</source><source>app/shared/navigation/navigation.component.html:92</source>Stakeholder</msg>
+  <msg id="4475916061756786837"><source>app/shared/navigation/navigation.component.html:25,26</source><source>app/shared/navigation/navigation.component.html:41,42</source>Information
+      </msg>
+  <msg id="7483352067400861187"><source>app/shared/navigation/navigation.component.html:29,30</source>Registration
+      </msg>
+  <msg id="8836425958694058396"><source>app/shared/navigation/navigation.component.html:33,34</source>Organizations
+      </msg>
+  <msg id="4262855819860120197"><source>app/shared/navigation/navigation.component.html:38</source><source>app/shared/navigation/navigation.component.html:124</source>Volunteer</msg>
+  <msg id="7274085266791146569"><source>app/shared/navigation/navigation.component.html:45,46</source>Application
+      </msg>
+  <msg id="1825807950750868358"><source>app/shared/navigation/navigation.component.html:49,50</source>Assigned Shifts
+      </msg>
+  <msg id="3797778920049399855"><source>app/shared/navigation/navigation.component.html:57</source><source>app/shared/navigation/navigation.component.html:169</source>Logout</msg>
+  <msg id="25211108873803829"><source>app/shared/navigation/navigation.component.html:69</source>CSC&apos;s Engagement Portal</msg>
+  <msg id="6156963733240893400"><source>app/shared/navigation/navigation.component.html:98,99</source><source>app/shared/navigation/navigation.component.html:130,131</source>Information
+              </msg>
+  <msg id="7728524262685463935"><source>app/shared/navigation/navigation.component.html:101,102</source>Registration
+              </msg>
+  <msg id="5537298312849739831"><source>app/shared/navigation/navigation.component.html:104,105</source>Registration Debug
+              </msg>
+  <msg id="1695501257397803185"><source>app/shared/navigation/navigation.component.html:107,108</source><source>app/shared/navigation/navigation.component.html:139,140</source>Organizations
+              </msg>
+  <msg id="7610966155829993844"><source>app/shared/navigation/navigation.component.html:110,111</source>Affiliations
+              </msg>
+  <msg id="5970171846946043012"><source>app/shared/navigation/navigation.component.html:113,114</source><source>app/shared/navigation/navigation.component.html:145,146</source>Update Info
+              </msg>
+  <msg id="4293601668128867297"><source>app/shared/navigation/navigation.component.html:116,117</source>Register Organization
+              </msg>
+  <msg id="4282342904233881882"><source>app/shared/navigation/navigation.component.html:119,120</source>My Organizations
+              </msg>
+  <msg id="5636764854853739799"><source>app/shared/navigation/navigation.component.html:133,134</source>Application
+              </msg>
+  <msg id="8775836562323806277"><source>app/shared/navigation/navigation.component.html:136,137</source>Application Debug
+              </msg>
+  <msg id="5470151338951674341"><source>app/shared/navigation/navigation.component.html:142,143</source>Assigned Shifts
+              </msg>
+  <msg id="771945533364668751"><source>app/shared/navigation/navigation.component.html:150</source>Forums</msg>
+  <msg id="5736481176444461852"><source>app/shared/navigation/navigation.component.html:154</source><source>app/shared/about/about.component.html:1</source>About Us</msg>
+  <msg id="759687838251957893"><source>app/shared/navigation/navigation.component.html:158</source>Contact Us</msg>
+  <msg id="2454050363478003966"><source>app/shared/navigation/navigation.component.html:176</source><source>app/security/login/login.component.html:1</source><source>app/security/login/login.component.html:40</source>Login</msg>
+  <msg id="6578397717654172779"><source>app/shared/page-not-found/page-not-found.component.html:1</source>Page Not Found</msg>
+  <msg id="2637040957358356533"><source>app/shared/footer/footer.component.html:11</source>Terms and conditions</msg>
+  <msg id="7166643135846939840"><source>app/shared/footer/footer.component.html:10</source>http://www.csc-scc.gc.ca/about-us/006-1000-eng.shtml</msg>
+  <msg id="4229217686275969533"><source>app/shared/footer/footer.component.html:17</source>Transparency</msg>
+  <msg id="5748640255341180380"><source>app/shared/footer/footer.component.html:16</source>http://www.csc-scc.gc.ca/transparency/index-eng.shtml</msg>
+  <msg id="2501489806101473286"><source>app/shared/footer/footer.component.html:26</source>About us</msg>
+  <msg id="6782596223546360564"><source>app/shared/footer/footer.component.html:25</source>http://www.csc-scc.gc.ca/about-us/index-eng.shtml</msg>
+  <msg id="4327911278094092947"><source>app/shared/footer/footer.component.html:30</source>Acts, Regulations and Policy</msg>
+  <msg id="6307845823460074290"><source>app/shared/footer/footer.component.html:29</source>http://www.csc-scc.gc.ca/acts-and-regulations/index-eng.shtml</msg>
+  <msg id="7568407482988182411"><source>app/shared/footer/footer.component.html:34</source>Our Role</msg>
+  <msg id="7217280360170712196"><source>app/shared/footer/footer.component.html:33</source>http://www.csc-scc.gc.ca/about-us/006-0001-eng.shtml</msg>
+  <msg id="9019997716828530671"><source>app/shared/footer/footer.component.html:38</source>Our Priorities</msg>
+  <msg id="557915129825880583"><source>app/shared/footer/footer.component.html:37</source>http://www.csc-scc.gc.ca/about-us/006-0002-eng.shtml</msg>
+  <msg id="2224662375658072457"><source>app/shared/footer/footer.component.html:42</source>Minister</msg>
+  <msg id="6570321329798998156"><source>app/shared/footer/footer.component.html:41</source>http://www.csc-scc.gc.ca/about-us/006-0004-eng.shtml</msg>
+  <msg id="798326991528652312"><source>app/shared/footer/footer.component.html:46</source>Commissioner</msg>
+  <msg id="8125035828556217841"><source>app/shared/footer/footer.component.html:45</source>http://www.csc-scc.gc.ca/about-us/006-0005-eng.shtml</msg>
+  <msg id="1193342024679711454"><source>app/shared/footer/footer.component.html:50</source>History of CSC</msg>
+  <msg id="1604703252340422608"><source>app/shared/footer/footer.component.html:49</source>http://www.csc-scc.gc.ca/about-us/006-0007-eng.shtml</msg>
+  <msg id="841934696444961534"><source>app/shared/footer/footer.component.html:57</source>News</msg>
+  <msg id="3692258698425063480"><source>app/shared/footer/footer.component.html:56</source>http://www.csc-scc.gc.ca/media-room/index-eng.shtml</msg>
+  <msg id="9221730911539762110"><source>app/shared/footer/footer.component.html:61</source>Frequently Asked Questions</msg>
+  <msg id="3133780484401073427"><source>app/shared/footer/footer.component.html:60</source>http://www.csc-scc.gc.ca/media-room/009-0002-eng.shtml</msg>
+  <msg id="8936704404804793618"><source>app/shared/footer/footer.component.html:65</source>Videos</msg>
+  <msg id="1114835057428151916"><source>app/shared/footer/footer.component.html:64</source>http://www.csc-scc.gc.ca/media-room/009-1000-eng.shtml</msg>
+  <msg id="5545830002191506526"><source>app/shared/footer/footer.component.html:69</source>News Releases</msg>
+  <msg id="5203979641280169756"><source>app/shared/footer/footer.component.html:68</source>http://www.csc-scc.gc.ca/media-room/009-0004-eng.shtml</msg>
+  <msg id="8525213662266893834"><source>app/shared/footer/footer.component.html:76</source>Contact us</msg>
+  <msg id="8968355020280160964"><source>app/shared/footer/footer.component.html:75</source><source>app/shared/footer/footer.component.html:79</source>http://www.csc-scc.gc.ca/contact-us/index-eng.shtml</msg>
+  <msg id="4763337723588457008"><source>app/shared/footer/footer.component.html:80</source>General Inquiries</msg>
+  <msg id="4667454119084137505"><source>app/shared/footer/footer.component.html:84</source>Feedback Form</msg>
+  <msg id="7004343962675145696"><source>app/shared/footer/footer.component.html:83</source>http://www.csc-scc.gc.ca/contact-us/008-0001-eng.shtml</msg>
+  <msg id="7476081554189998885"><source>app/shared/footer/footer.component.html:88</source>Media Room</msg>
+  <msg id="9006113203139521222"><source>app/shared/footer/footer.component.html:87</source>http://www.csc-scc.gc.ca/media-room/009-0003-eng.shtml</msg>
+  <msg id="6292663472472461751"><source>app/shared/footer/footer.component.html:94</source>Stay Connected</msg>
+  <msg id="8401085193044135025"><source>app/shared/footer/footer.component.html:98</source>YouTube</msg>
+  <msg id="8239927822099554844"><source>app/shared/footer/footer.component.html:97</source>https://www.youtube.com/user/CSCsccEN</msg>
+  <msg id="1715373473261069991"><source>app/shared/footer/footer.component.html:102</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:35</source>Twitter</msg>
+  <msg id="7026117993845108769"><source>app/shared/footer/footer.component.html:101</source>https://twitter.com/csc_scc_en</msg>
+  <msg id="1675576832133836002"><source>app/shared/footer/footer.component.html:106</source>flickr</msg>
+  <msg id="4746244627337404547"><source>app/shared/footer/footer.component.html:105</source>https://www.flickr.com/photos/csc_imagery/</msg>
+  <msg id="8790918354594417962"><source>app/shared/footer/footer.component.html:110</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:24</source>Facebook</msg>
+  <msg id="3975259080590177303"><source>app/shared/footer/footer.component.html:109</source>https://www.facebook.com/CorrectionalServices/</msg>
+  <msg id="4805280362412625657"><source>app/shared/footer/footer.component.html:5</source><source>app/shared/footer/footer.component.html:119</source>Site Footer</msg>
+  <msg id="2041675390931385838"><source>app/shared/footer/footer.component.html:125</source>Health</msg>
+  <msg id="3737731485930741495"><source>app/shared/footer/footer.component.html:124</source>https://www.canada.ca/en/services/health.html</msg>
+  <msg id="7150322731406802059"><source>app/shared/footer/footer.component.html:129</source>Travel</msg>
+  <msg id="2287781434677161247"><source>app/shared/footer/footer.component.html:128</source>https://travel.gc.ca/</msg>
+  <msg id="167693379354389030"><source>app/shared/footer/footer.component.html:135</source>Service Canada</msg>
+  <msg id="5832756295612320501"><source>app/shared/footer/footer.component.html:133</source>https://www.canada.ca/en/employment-social-development/corporate/portfolio/service-canada.html</msg>
+  <msg id="3229595422546554334"><source>app/shared/footer/footer.component.html:139</source>Jobs</msg>
+  <msg id="8942133334092674926"><source>app/shared/footer/footer.component.html:138</source>https://www.jobbank.gc.ca/home</msg>
+  <msg id="8901691048657107782"><source>app/shared/footer/footer.component.html:143</source>Economy</msg>
+  <msg id="1027643547680228279"><source>app/shared/footer/footer.component.html:142</source>http://actionplan.gc.ca/en</msg>
+  <msg id="4565637070850597086"><source>app/shared/header/header.component.html:7</source><source>app/shared/header/header.component.html:8</source>Government of Canada</msg>
+  <msg id="1411850867528020798"><source>app/shared/header/header.component.html:12</source>Canada.ca</msg>
+  <msg id="5577930970368011972"><source>app/shared/header/header.component.html:12</source>https://www.canada.ca/en.html</msg>
+  <msg id="7143579180750436311"><source>app/shared/header/header.component.html:14</source>Services</msg>
+  <msg id="474508468751754424"><source>app/shared/header/header.component.html:14</source>https://www.canada.ca/en/services.html</msg>
+  <msg id="6945686797037328785"><source>app/shared/header/header.component.html:16</source>Departments</msg>
+  <msg id="2552623755615945099"><source>app/shared/header/header.component.html:16</source>https://www.canada.ca/en/government/dept.html</msg>
+  <msg id="4134147244760971282" desc="English/French language label"><source>app/shared/header/header.component.html:18</source>Français</msg>
+  <msg id="5561142040999083264" desc="English/French Language link"><source>app/shared/header/header.component.html:18</source>/fr/</msg>
+  <msg id="5083742282739839261"><source>app/shared/home/home.component.html:1,3</source>
+  Welcome to your Engagement Portal
+</msg>
+  <msg id="2316699692607183573"><source>app/shared/home/home.component.html:5,7</source>Designed to bring together CSC&apos;s partners, stakeholders and volunteers for ongoing dialogue, consultation and
+  collaboration, the EP will enable to to connect with an on-line community of like-minded individuals and organizations
+  - a way to engage with it&apos;s stakeholders</msg>
+  <msg id="5816344384723409981"><source>app/shared/home/home.component.html:22</source>Engagement and Communications</msg>
+  <msg id="4859117525598095594"><source>app/shared/home/home.component.html:24,25</source>The EP will serve asa a modernized stakeholder repository, while acting as a collaboration space to support,
+      sustain and manage ongoing community engagement initiatives. A few features of the RP:</msg>
+  <msg id="7278843271697378510"><source>app/shared/home/home.component.html:28</source>A centralized, searchable database of advisory groups, CSC partners and stakeholders</msg>
+  <msg id="5062416551153390521"><source>app/shared/home/home.component.html:30,32</source>The ability to collaborate and consult on documents with partners and stakeholders remotely on various
+        projects and tasks
+      </msg>
+  <msg id="7786706499864649702"><source>app/shared/home/home.component.html:34</source>Interaction, including e-communications, questionnaires/analytics</msg>
+  <msg id="6635138775982849572"><source>app/shared/home/home.component.html:36</source>A document repository of resource material, including training and orientation</msg>
+  <msg id="7423170973919027279"><source>app/shared/home/home.component.html:38</source>Online discussion forums</msg>
+  <msg id="7890689986354168051"><source>app/shared/home/home.component.html:43</source>As a member, you can:</msg>
+  <msg id="6518228227613844706"><source>app/shared/home/home.component.html:45</source>Register yourself or your organization as a stakeholders</msg>
+  <msg id="1372006747444420814"><source>app/shared/home/home.component.html:47</source>Access a ceteralized, searchable database of CSC partners and stakeholders</msg>
+  <msg id="5497394193566708102"><source>app/shared/home/home.component.html:49</source>Search out community engagement events</msg>
+  <msg id="1518021099646658440"><source>app/shared/home/home.component.html:51</source>Collaborate with CSC and other stakeholders</msg>
+  <msg id="1194005124678275970"><source>app/shared/home/home.component.html:53</source>Take part in the online discussion forums</msg>
+  <msg id="3857388172318008647"><source>app/shared/home/home.component.html:55</source>Apply for volunteer positions</msg>
+  <msg id="3486679398271885916"><source>app/shared/banner/banner.component.html:13</source><source>app/shared/banner/banner.component.html:14</source>Canada</msg>
+  <msg id="2991808651553018519"><source>app/shared/about/about.component.html:3,7</source>
+  <ph name="START_TAG_SPAN"><ex>&lt;span&gt;</ex></ph>The Citizen Engagement Directorate<ph name="CLOSE_TAG_SPAN"><ex>&lt;/span&gt;</ex></ph> through effective engagement, improves communication between
+  the Correctional Service of Canada (CSC) and Canadians by creating opportunities for citizens to become
+  involved, and by encouraging communities to address correctional issues.
+</msg>
+  <msg id="5489467983655680157"><source>app/shared/about/about.component.html:9,14</source>
+  CSC enjoys a broad spectrum of public participation. Citizens are involved in our operations in many diverse
+  ways. From attending CSC outreach events, to participating in consultations; from volunteering at our
+  institutions, to actively advising the Service on Citizen Advisory Committees – CSC has many ways to routinely
+  rely on public involvement.
+</msg>
+  <msg id="2687997762520903959"><source>app/shared/about/about.component.html:17,22</source><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:16,21</source>
+    Engagement refers to approaches that enable community members to meaningfully participate in the decisions,
+    actions and processes that shape their community. Engagement can take place at the research, planning or
+    carrying out stages of a project or program or as part of any process that is aimed at solving community
+    issues or developing an approach to address community problems.
+  </msg>
+  <msg id="3932224365244439098"><source>app/shared/about/about.component.html:23,27</source><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:22,26</source>
+    Engagement is being responsive to create opportunities for Canadians to share in the shaping of government
+    priorities, delivery of programs and services and ensuring that policy plans are generated in a consultative
+    manner.
+  </msg>
+  <msg id="6696310206703599744"><source>app/shared/about/about.component.html:28,31</source><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:27,30</source>
+    Engagement involves proactive and ongoing communication over extended periods of time. It promotes
+    partnership, collaboration and inclusive decision-making in how the department is run.
+  </msg>
+  <msg id="9098870690609834754"><source>app/shared/about/about.component.html:34,39</source>
+  For CSC, engagement is the meaningful involvement of individuals, organizations and other government departments
+  in policy or program development, from raising awareness to agenda-setting, planning and decision-making,
+  implementation and review. It requires ongoing two-way communication that contributes to building and
+  maintaining productive relationships with increasingly diverse partners and citizens.
+</msg>
+  <msg id="7790555393558905724"><source>app/shared/about/about.component.html:42</source>To promote better understanding of the correctional process and more specifically, CSC&apos;s role in it.</msg>
+  <msg id="8764630848064560764"><source>app/shared/about/about.component.html:43</source>To highlight the role of citizens in making communities safer.</msg>
+  <msg id="8856940544280522676"><source>app/shared/about/about.component.html:44</source>To consult with people when CSC is developing policies, programs and/or services.</msg>
+  <msg id="4383019829713405388"><source>app/shared/about/about.component.html:45</source>To communicate correctional challenges in an open and proactive manner.</msg>
+  <msg id="6891570548511717238"><source>app/shared/about/about.component.html:46,48</source>
+    To foster an environment where citizens can participate in decisions and actions that will shape communities.
+  </msg>
+  <msg id="6328012468017284092"><source>app/shared/about/about.component.html:49</source> To create opportunities to be involved in the delivery of key services.</msg>
+  <msg id="8126092606666501635"><source>app/shared/about/about.component.html:52,55</source>
+  For More Information on CSC&apos;s Citizen Engagement Directorate visit <ph name="START_LINK"><ex>&lt;a&gt;</ex></ph>CSC&apos;s website<ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex></ph>
+</msg>
+  <msg id="1768028908734964857"><source>app/shared/about/about.component.html:57,60</source>
+  Additional information about federal corrections in Canada and how to get involved is available on CSC&apos;s Web
+  site at <ph name="START_LINK"><ex>&lt;a&gt;</ex></ph>www.csc-scc.gc.ca<ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex></ph>
+</msg>
+  <msg id="2450546170804221723"><source>app/security/email-verification/email-verification.component.html:3</source>Verification</msg>
+  <msg id="1968307246833667226"><source>app/security/email-verification/email-verification.component.html:5</source>Email verification in progress</msg>
+  <msg id="403319713029723491"><source>app/security/email-verification/email-verification.component.html:8,9</source>Your account has been verified!
+  </msg>
+  <msg id="983908560375217886"><source>app/security/email-verification/email-verification.component.html:12,13</source>Error verifying your account!
+  </msg>
+  <msg id="9003660798959933173"><source>app/security/login/login.component.html:3,6</source>
+  To submit an application to become a Stakeholder with CSC and/or a Volunteer with CSC, you must first have an
+  account with the Engagement Portal.
+</msg>
+  <msg id="2234287936929847933"><source>app/security/login/login.component.html:8,11</source>
+  Creating an account will grant you access to some of the Engagement Portal&apos;s features, such as participating in
+  various Forums on themes related to correctional process, community reintegration, recruitment, etc.
+</msg>
+  <msg id="1039059918066998186"><source>app/security/login/login.component.html:13,16</source>
+  If you already have an account, please login below. If you do not have an account, click on the &quot;Create Account&quot;
+  button below.
+</msg>
+  <msg id="2728506946842737360"><source>app/security/login/login.component.html:21,22</source>Login error occurred
+  </msg>
+  <msg id="203827529942340818"><source>app/security/login/login.component.html:25</source><source>app/security/signup/signup.component.html:31</source>Enter your email</msg>
+  <msg id="2772023564304193657"><source>app/security/login/login.component.html:30</source><source>app/security/signup/signup.component.html:47</source>Enter your password</msg>
+  <msg id="1267967133679326155"><source>app/security/login/login.component.html:41</source><source>app/security/signup/signup.component.html:1</source>Create Account</msg>
+  <msg id="7290374659252540217"><source>app/security/signup/signup.component.html:4</source>Instructions</msg>
+  <msg id="8741995839344120333"><source>app/security/signup/signup.component.html:6,9</source>
+    Fill out the following pages. You will receive an email at the end with a link to complete the account
+    creation.
+  </msg>
+  <msg id="1875391837100558120"><source>app/security/signup/signup.component.html:10</source>Open the email and click on the hyperlink redeem invitation.</msg>
+  <msg id="1106431394398907993"><source>app/security/signup/signup.component.html:11</source>Enter a password. You will be redirected to the Welcome page.</msg>
+  <msg id="1938913984758672363"><source>app/security/signup/signup.component.html:12</source>Your account creation is completed!</msg>
+  <msg id="1635073239197333335"><source>app/security/signup/signup.component.html:16,19</source>
+  Once your basic profile is created, you can begin your application to join thousands of individuals who are
+  recognized as CSC Volunteers.
+</msg>
+  <msg id="2321373100011264038"><source>app/security/signup/signup.component.html:23,24</source>You will receive a verification email shortly
+</msg>
+  <msg id="8508068491876678108"><source>app/security/signup/signup.component.html:27,28</source>Signup error occurred
+</msg>
+  <msg id="6419062618641984446"><source>app/security/signup/signup.component.html:36,37</source>Please enter a valid email address
+  </msg>
+  <msg id="1415349724121058821"><source>app/security/signup/signup.component.html:41,42</source>Email is required
+  </msg>
+  <msg id="2011026261346966491"><source>app/security/signup/signup.component.html:56,57</source>Password must contain upper, lower, digit and special
+  </msg>
+  <msg id="5607392255589352099"><source>app/security/signup/signup.component.html:61,62</source>Password is required
+  </msg>
+  <msg id="7941159538449463077"><source>app/security/signup/signup.component.html:67</source>Re-enter your password</msg>
+  <msg id="3658565349564341824"><source>app/security/signup/signup.component.html:76,77</source>Password does not match
+  </msg>
+  <msg id="1939768052308461548"><source>app/security/signup/signup.component.html:83,84</source>Next
+  </msg>
+  <msg id="4013058784894700859"><source>app/security/signup-verification/signup-verification.component.html:1</source>Email Verification Sent</msg>
+  <msg id="7302465709748770910"><source>app/security/signup-verification/signup-verification.component.html:3,6</source>
+  A verification email was just sent to <ph name="INTERPOLATION"><ex>{{&apos;*EMAIL*&apos;}}</ex></ph>, please go to this email account and follow the instructions
+  in the email we&apos;ve sent.
+</msg>
+  <msg id="6247316343529012048"><source>app/security/signup-verification/signup-verification.component.html:8,10</source>
+  Your account will be considered inactive until you verify your email.
+</msg>
+  <msg id="2507915053530024193"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:1</source>Becoming a Stakeholder</msg>
+  <msg id="4189205904823226510"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:3</source>Welcome to Correctional Service of Canada&apos;s Engagement Portal</msg>
+  <msg id="6206714307904305269"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:5,11</source>
+  The engagement portal is a new tool which aims to maintain effective teamwork with CSC partners and
+  stakeholders. This system will assist in the work of advisory groups, faith community organizations, volunteers,
+  victims, public servants, as well as all Canadians. The engagement portal will serve as an archive of useful
+  materials (latest news, training guides, etc.) and a collaboration space to manage ongoing community engagement
+  events. It is also a place to apply for various volunteer and partnership roles.
+</msg>
+  <msg id="2809866246315902565"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:13</source>The engagement portal aims to support CSC&apos;s strategic priorities:</msg>
+  <msg id="3687194426938367329"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:33</source>Partners</msg>
+  <msg id="8595195619959962137"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:35,39</source>
+  CSC’s relationships with Canadian communities are essential to supporting public safety, as most offenders will
+  eventually return to the community. The success of their reintegration after release depends on the support of
+  citizens and communities.
+</msg>
+  <msg id="1207307525107956196"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:41,45</source>
+  CSC’s community partners contribute to the safe reintegration of offenders by providing community programs,
+  employment opportunities, services and housing. They also play an important role by connecting offenders with
+  appropriate community resources as they prepare for the end of their sentence.
+</msg>
+  <msg id="2182486677854617525"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:47,51</source>
+  It is important for CSC to maintain strong relationships with our current partners and to engage new community
+  partners in order to meet the increasingly diverse needs of the offender population. CSC is committed to
+  collaborating with community partners to support safe and vibrant communities.
+</msg>
+  <msg id="4177521662188397113"><source>app/stakeholder/stakeholder-information/stakeholder-information.component.html:57,58</source>Register as a Stakeholder
+  </msg>
+  <msg id="7723943582740014656"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:1</source>Organization Details</msg>
+  <msg id="7658402240953727096"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:6</source><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:48</source>Name:</msg>
+  <msg id="4723926237327750425"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:11</source>Physical Address:</msg>
+  <msg id="159201694353967269"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:16</source>Mailing Address:</msg>
+  <msg id="2595624684026123810"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:21</source><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:58</source>Telephone:</msg>
+  <msg id="6631334172623029500"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:26</source><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:63</source>Email:</msg>
+  <msg id="874465399775999813"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:31</source>Website:</msg>
+  <msg id="6263279618709581595"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:37</source>Organization Type:</msg>
+  <msg id="1895933958297257119"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:42</source>Affiliations</msg>
+  <msg id="1350397475416604948"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:53</source>Role:</msg>
+  <msg id="7819314041543176992"><source>app/stakeholder/stakeholder-organization-detail-dialog/stakeholder-organization-detail-dialog.component.html:71</source>Close</msg>
+  <msg id="282428642062068493"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:1</source>Organization List</msg>
+  <msg id="8829497237648100098"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:4</source>Filter</msg>
+  <msg id="8953033926734869941"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:16</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:6</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:49</source>Name</msg>
+  <msg id="8909936386814821922"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:23</source>Province</msg>
+  <msg id="2314075913167237221"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:30</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:35</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:91</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:94</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:151</source>City</msg>
+  <msg id="8650499415827640724"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:37</source>Type</msg>
+  <msg id="9174548963235376863"><source>app/stakeholder/stakeholder-organization-list/stakeholder-organization-list.component.html:46</source>Affiliate</msg>
+  <msg id="4090160044021470261"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:3</source>Contact Information</msg>
+  <msg id="6028371114637047813"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:6</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:6</source>First Name</msg>
+  <msg id="8955767596926635588"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:11</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:11</source>Middle Name</msg>
+  <msg id="4407559560004943843"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:16</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:16</source>Last Name</msg>
+  <msg id="5503269962160222503"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:20</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:79</source>Physical Address</msg>
+  <msg id="4523907648468761702"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:23</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:79</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:82</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:139</source>Address Line 1</msg>
+  <msg id="8231916530164206787"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:29</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:85</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:88</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:145</source>Address Line 2</msg>
+  <msg id="303341677661954727"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:41</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:97</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:100</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:157</source>P.O. Box</msg>
+  <msg id="8088223640606138013"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:47</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:103</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:106</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:163</source>Province/Territory</msg>
+  <msg id="7647550512660678493"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:53</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:109</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:112</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:169</source>Postal Code</msg>
+  <msg id="2070089726886233510"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:59,60</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:115,116</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:118,119</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:175,176</source>Invalid postal code
+    </msg>
+  <msg id="516176798986294299"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:64</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:120</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:123</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:180</source>Country</msg>
+  <msg id="3439636926170808856"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:70</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:129</source>Mailing Address</msg>
+  <msg id="2366591111877454661"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:74,75</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:134,135</source>Mailing Address is the same as Physical Address
+    </msg>
+  <msg id="2458848059908306406"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:125</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:186</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:17</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:60</source>Telephone</msg>
+  <msg id="9148121346968102936"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:130</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:17</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:39</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:97</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:119</source>Primary Telephone</msg>
+  <msg id="6361181611023478356"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:134</source>Primary Extension</msg>
+  <msg id="6537353519079725777"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:140</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:44</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:69</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:126</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:151</source>Secondary Telephone</msg>
+  <msg id="757267891652791146"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:144</source>Secondary Extension</msg>
+  <msg id="4452427314943113135"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:151</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:363</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:166</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:59</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-acknowledge/stakeholder-registration-acknowledge.component.html:14</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:236</source><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:58</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:157</source><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:91</source><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:105</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:91</source><source>app/volunteer/volunteer-registration/volunteer-registration-agreement/volunteer-registration-agreement.component.html:20</source>Previous</msg>
+  <msg id="3885497195825665706"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-contact/stakeholder-registration-contact.component.html:152</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:364</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:167</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:35</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:60</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:237</source><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:59</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:158</source><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:92</source><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:106</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:92</source>Next</msg>
+  <msg id="4923240454141025928"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:3</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:3</source>Services Offered</msg>
+  <msg id="3804929780251082454"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:5</source>Accommodations</msg>
+  <msg id="5580930666872082416"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:11,12</source>Hostels
+      </msg>
+  <msg id="5346508026552960247"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:18,19</source>Private Home Placements (PHP)
+      </msg>
+  <msg id="8872152559869028109"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:25,26</source>Alternative Community Beds (ACB)
+      </msg>
+  <msg id="2927572529565486829"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:34,35</source>Supervised Apartments
+      </msg>
+  <msg id="3109138715373915082"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:44</source>Education/Academic Services</msg>
+  <msg id="7455890589025122513"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:50,51</source>Adult
+      </msg>
+  <msg id="5354500984094564189"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:57,58</source>Post Secondary
+      </msg>
+  <msg id="9002879960209154439"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:64,65</source>English as a Second Language
+      </msg>
+  <msg id="3788009615648358377"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:73,74</source>General Equivalency Degree
+      </msg>
+  <msg id="4862811847367855491"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:80,81</source>Research
+      </msg>
+  <msg id="7609684013954316286"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:87,88</source>Diploma
+      </msg>
+  <msg id="6227933572857707785"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:96,97</source>Certificate
+      </msg>
+  <msg id="4608712307038162521"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:103,104</source>Apprenticeship
+      </msg>
+  <msg id="4028851210655551251"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:115</source>Employment Services for incarcerated and/or community supervised offenders</msg>
+  <msg id="3614235662697932606"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:121,122</source>Employment Information
+      </msg>
+  <msg id="8758536440003771358"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:128,129</source>Training / Skills Development
+      </msg>
+  <msg id="7927846340621022815"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:135,136</source>Employment Referral Service
+      </msg>
+  <msg id="1461914615810214786"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:143,144</source>Employer
+    </msg>
+  <msg id="1996459728373309363"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:152</source>Services offered to which Religious Faith Groups</msg>
+  <msg id="5566687438912081507"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:157,158</source>Buddhist
+      </msg>
+  <msg id="461453340677648"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:163,164</source>Christian
+      </msg>
+  <msg id="8509316743295851862"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:169,170</source>Hindu
+      </msg>
+  <msg id="3362536863712830369"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:177,178</source>Islam
+      </msg>
+  <msg id="8917688829536937425"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:183,184</source>Jewish
+      </msg>
+  <msg id="271812676275574395"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:189,190</source>Rastafarian
+      </msg>
+  <msg id="2521684703227361352"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:197,198</source>Sikh
+      </msg>
+  <msg id="5245024718329247224"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:204,205</source>Traditional Spirituality
+      </msg>
+  <msg id="7571875511636739845"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:210,211</source>Wiccan/Pagan
+      </msg>
+  <msg id="4860705305462587354"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:219</source>Legal Services</msg>
+  <msg id="8581938942300233224"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:224,225</source>Criminal
+      </msg>
+  <msg id="4329448379068070386"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:230,231</source>Family
+      </msg>
+  <msg id="7148752756186809133"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:236,237</source>Civil
+      </msg>
+  <msg id="3569316657712552563"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:246</source>Health Services</msg>
+  <msg id="4454518695653404853"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:251,252</source>General Health
+      </msg>
+  <msg id="3590516377256277028"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:257,258</source>Mental Health
+      </msg>
+  <msg id="6681684044723850036"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:269</source>Counselling Services</msg>
+  <msg id="5049536129993560671"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:275,276</source>Anger Management/Conflict Resolution
+      </msg>
+  <msg id="2535108937999847862"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:282,283</source>Community Outreach/Education
+      </msg>
+  <msg id="2676130807216353649"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:289,290</source>Emotional Support
+      </msg>
+  <msg id="6702774486772286803"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:297,298</source>Employment
+      </msg>
+  <msg id="4862267866999910743"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:303,304</source>Family Support
+      </msg>
+  <msg id="6460646857053408337"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:309,310</source>Health
+      </msg>
+  <msg id="3021395918475166812"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:318,319</source>Housing and Financial Support
+      </msg>
+  <msg id="5543377095696267785"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:324,325</source>Life Skills
+      </msg>
+  <msg id="6258348647294038855"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:330,331</source>Trauma
+      </msg>
+  <msg id="2489267720022402569"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:338,339</source>Reintegration
+      </msg>
+  <msg id="4574945917551195991"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:344,345</source>Substance Abuse Interventions
+      </msg>
+  <msg id="3621818297254667148"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:350,351</source>Sexual Abuse
+      </msg>
+  <msg id="9046104999141053190"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-services-offered/stakeholder-registration-services-offered.component.html:359,360</source>Please select a service offered
+  </msg>
+  <msg id="2743200738154160258"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:8</source>Languages Offered</msg>
+  <msg id="3016094591927139479"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:12,13</source>English
+      </msg>
+  <msg id="1887732498302962163"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:16,17</source>French
+      </msg>
+  <msg id="237170151618388304"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:20,21</source>Both
+      </msg>
+  <msg id="591930889072004964"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:26</source>Please specify what other languages</msg>
+  <msg id="9016242472891190061"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:31</source>Offered to which genders</msg>
+  <msg id="1454882489789669758"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:37,38</source>Men
+    </msg>
+  <msg id="3564133509454990011"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:43,44</source>Women
+    </msg>
+  <msg id="3061829244156287980"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:50</source>Please specify what other genders</msg>
+  <msg id="5488566104603245601"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:55</source>Offered to which types of offenders</msg>
+  <msg id="8062492674670064096"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:61,62</source>Incarcerated
+      </msg>
+  <msg id="211656599421944409"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:68,69</source>Community Supervised
+      </msg>
+  <msg id="8181538404613185111"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:75,76</source>High Risk Offenders
+      </msg>
+  <msg id="5030596858819598412"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:84</source>Offered to which groups</msg>
+  <msg id="554057348748331212"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:90,91</source>Aged
+      </msg>
+  <msg id="6215119252497559323"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:97,98</source>Youth
+      </msg>
+  <msg id="5194364408889400706"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:104,105</source>Physical Disability
+      </msg>
+  <msg id="146331056821177453"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:113,114</source>Mental Health Needs
+      </msg>
+  <msg id="148081247180298525"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:120,121</source>Mother-Child
+      </msg>
+  <msg id="1886354896527564435"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:127,128</source>Ethnocultural Groups
+      </msg>
+  <msg id="559714273347061732"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:137</source>Offered to which Indigenous groups</msg>
+  <msg id="6698979919444951274"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:143,144</source>Inuit
+      </msg>
+  <msg id="5392024438991624219"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:150,151</source>Metis
+      </msg>
+  <msg id="3354454499414249277"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-service-types/stakeholder-registration-service-types.component.html:157,158</source>First Nations
+      </msg>
+  <msg id="4424350571476641431"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:3</source>Privacy Notice</msg>
+  <msg id="6103751629428986043"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:5,8</source>
+    The information you provide is to support Correctional Service Canada (CSC) in providing. Your participation is
+    voluntary and is based on your consent.
+  </msg>
+  <msg id="6886444530540528048"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:10,17</source>
+    Your personal information is administered in accordance with the federal Privacy Act. As such, you have the
+    right to request access to your personal information held by and the right to ensure that the information is
+    safeguarded and retained according to the retention periods set out in the federal Privacy Act. Furthermore, you
+    have the right to ensure that the information is accurate and up-to-date. Please contact Correctional Service
+    Canada’s Access to Information and Privacy Division at GEN-NHQATIP-AIPRP@CSC-SCC.GC.CA with any questions or
+    concerns you may have.
+  </msg>
+  <msg id="2790182199674253873"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:19,25</source>
+    Your personal information will be retained in Personal Information Bank. Instructions for obtaining this
+    information are outlined in the government publication InfoSource which is available online on CSC’s website at:
+    <ph name="START_LINK"><ex>&lt;a&gt;</ex></ph>
+      http://www.csc-scc.gc.ca/info-source/index-eng.shtml
+    <ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex></ph>
+  </msg>
+  <msg id="5127295098986273869"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-agreement/stakeholder-registration-agreement.component.html:28</source>Agree to Terms and Conditions</msg>
+  <msg id="1315675495421678479"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:3</source>About Yourself</msg>
+  <msg id="4560390834536785049"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:6</source>Tell us about yourself</msg>
+  <msg id="1123921182481387584"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:10</source>Social Media</msg>
+  <msg id="5481284030283031915"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:13</source>Website</msg>
+  <msg id="2745280504893708909"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:19,20</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:30,31</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:41,42</source><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:52,53</source>Invalid url (requires http://)
+    </msg>
+  <msg id="4440081753597585133"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-about/stakeholder-registration-about.component.html:46</source>LinkedIn</msg>
+  <msg id="624590551953921933"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-acknowledge/stakeholder-registration-acknowledge.component.html:3</source><source>app/volunteer/volunteer-registration/volunteer-registration-agreement/volunteer-registration-agreement.component.html:3</source>Agreement</msg>
+  <msg id="2307526171625345146"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-acknowledge/stakeholder-registration-acknowledge.component.html:7</source>I acknowledge that all the information is truthful to the best of my knowledge</msg>
+  <msg id="65984904390749158"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-acknowledge/stakeholder-registration-acknowledge.component.html:15</source><source>app/volunteer/volunteer-registration/volunteer-registration-agreement/volunteer-registration-agreement.component.html:21</source>Finish</msg>
+  <msg id="6638888605024750529"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-stepper/stakeholder-registration-stepper.component.html:1</source>Stakeholder Registration</msg>
+  <msg id="5628428647576552084"><source>app/stakeholder/stakeholder-registration/stakeholder-registration-conclusion/stakeholder-registration-conclusion.component.html:1</source>Submitted Stakeholder Registration</msg>
+  <msg id="4454869566853277294"><source>app/volunteer/volunteer-information/volunteer-information.component.html:1</source>Becoming a Volunteer</msg>
+  <msg id="2122583626955852457"><source>app/volunteer/volunteer-information/volunteer-information.component.html:3</source>Volunteering with CSC</msg>
+  <msg id="8805873936585570305"><source>app/volunteer/volunteer-information/volunteer-information.component.html:5,8</source>Thousands of volunteers from all walks of life work with offenders and ex-offenders in federal correctional
+  institutions and communities across the country. Volunteers are an integral part of many offenders&apos; lives, whether the
+  offender is in prison or on parole. By bringing the community into the correctional environment, volunteers help
+  offenders function more effectively upon release into the community.</msg>
+  <msg id="8522188064975406493"><source>app/volunteer/volunteer-information/volunteer-information.component.html:12</source>Learn more about volunteering with CSC</msg>
+  <msg id="7571757471599669310"><source>app/volunteer/volunteer-information/volunteer-information.component.html:11</source>http://www.csc-scc.gc.ca/volunteers/index-eng.shtml</msg>
+  <msg id="346351562592182454"><source>app/volunteer/volunteer-information/volunteer-information.component.html:15</source>General Volunteering</msg>
+  <msg id="5093434459327341645"><source>app/volunteer/volunteer-information/volunteer-information.component.html:17,20</source>
+  Programs and services provided by citizens and volunteer organizations are many and varied. Some of these programs
+  and services include, but are not limited to:
+</msg>
+  <msg id="1981514085074551425"><source>app/volunteer/volunteer-information/volunteer-information.component.html:23</source>Chaplaincy, religious services, spiritual support</msg>
+  <msg id="5226023637104460248"><source>app/volunteer/volunteer-information/volunteer-information.component.html:24</source>Recreation activities</msg>
+  <msg id="3884162910787241656"><source>app/volunteer/volunteer-information/volunteer-information.component.html:25</source>Classroom and workshop instruction</msg>
+  <msg id="4044604374555555520"><source>app/volunteer/volunteer-information/volunteer-information.component.html:26</source>Cultural activities</msg>
+  <msg id="4677383227728496700"><source>app/volunteer/volunteer-information/volunteer-information.component.html:29,32</source>
+  Are you interested in helping offenders become law-abiding citizens? Would you like to make a difference and
+  support families of incarcerated offenders?
+</msg>
+  <msg id="4324431335569141759"><source>app/volunteer/volunteer-information/volunteer-information.component.html:34,38</source>
+  If you have answered yes and have the time, energy and passion to volunteer, there are many opportunities and
+  programs where you can make a difference in the lives of offenders. You may also join your local advisory
+  committees where you have an active voice in the correctional process.
+</msg>
+  <msg id="659900435970087086"><source>app/volunteer/volunteer-information/volunteer-information.component.html:41</source>Advisory Committees</msg>
+  <msg id="2205169851254912176"><source>app/volunteer/volunteer-information/volunteer-information.component.html:43,46</source>
+  Advisory committees are a collection of individuals who bring unique knowledge and skills in order to advise,
+  and guide the organization. CSC works with many advisory committees, two of them are:
+</msg>
+  <msg id="2868007839165327084"><source>app/volunteer/volunteer-information/volunteer-information.component.html:48</source>Citizen Advisory Committees</msg>
+  <msg id="3269477232339054372"><source>app/volunteer/volunteer-information/volunteer-information.component.html:50,53</source>
+  Citizen Advisory Committees (CACs) were set up by law to be a “public presence” in federal corrections. They
+  help CSC build stronger links between offenders and communities.
+</msg>
+  <msg id="2117145299764918900"><source>app/volunteer/volunteer-information/volunteer-information.component.html:55</source>Here are some other examples of CAC activities:</msg>
+  <msg id="2303204229557046071"><source>app/volunteer/volunteer-information/volunteer-information.component.html:58</source>Joining the warden in an inspection of an institution.</msg>
+  <msg id="3340907624266391211"><source>app/volunteer/volunteer-information/volunteer-information.component.html:59</source>Observing an internal disciplinary hearing.</msg>
+  <msg id="6569558996282916430"><source>app/volunteer/volunteer-information/volunteer-information.component.html:60</source>Meeting with other community groups interested in the correctional process.</msg>
+  <msg id="1589692382683541470"><source>app/volunteer/volunteer-information/volunteer-information.component.html:61</source>Observe crises in a facility.</msg>
+  <msg id="6142848285619544735"><source>app/volunteer/volunteer-information/volunteer-information.component.html:62</source>Connecting employers with offenders looking for work.</msg>
+  <msg id="1238628911978259938"><source>app/volunteer/volunteer-information/volunteer-information.component.html:63</source>Speaking at universities, service clubs, and other public events.</msg>
+  <msg id="84375459804986802"><source>app/volunteer/volunteer-information/volunteer-information.component.html:68</source>Learn more about volunteering with a CAC</msg>
+  <msg id="6046887508195645036"><source>app/volunteer/volunteer-information/volunteer-information.component.html:67</source>http://www.csc-scc.gc.ca/cac/index-eng.shtml</msg>
+  <msg id="4555023357552750241"><source>app/volunteer/volunteer-information/volunteer-information.component.html:71</source>Regional Ethnocultural Advisory Committee</msg>
+  <msg id="5143202221124090030"><source>app/volunteer/volunteer-information/volunteer-information.component.html:73,76</source>
+  Regional Ethnocultural Advisory Committees (REAC) are made up of influential members of the community who
+  come from ethnocultural backgrounds or have experience working in the area of ethnoculturalism.
+</msg>
+  <msg id="6468623287307837673"><source>app/volunteer/volunteer-information/volunteer-information.component.html:78</source>Here are some other examples of REAC activities:</msg>
+  <msg id="881775492379952065"><source>app/volunteer/volunteer-information/volunteer-information.component.html:81</source>Assisting institutions in providing specialized cultural activities to staff and offenders.</msg>
+  <msg id="1481002570816795673"><source>app/volunteer/volunteer-information/volunteer-information.component.html:82</source>Addressing offender spiritual needs and advising them on how to make community contacts.</msg>
+  <msg id="1804756256644908113"><source>app/volunteer/volunteer-information/volunteer-information.component.html:83</source>Assisting offenders in preparing for their parole.</msg>
+  <msg id="702747779738919110"><source>app/volunteer/volunteer-information/volunteer-information.component.html:84</source>Mentoring offenders upon their return to the community.</msg>
+  <msg id="689820993039374875"><source>app/volunteer/volunteer-information/volunteer-information.component.html:85</source>Helping offenders find jobs or a place to stay.</msg>
+  <msg id="8824612729419249540"><source>app/volunteer/volunteer-information/volunteer-information.component.html:89</source>Learn more about volunteering with a REAC</msg>
+  <msg id="3197445573976212975"><source>app/volunteer/volunteer-information/volunteer-information.component.html:88</source>http://www.csc-scc.gc.ca/ethnocultural/002004-0002-eng.shtml</msg>
+  <msg id="7176024473729784800"><source>app/volunteer/volunteer-information/volunteer-information.component.html:95,96</source>Register as a Volunteer
+  </msg>
+  <msg id="4212353231114787019"><source>app/volunteer/volunteer-information/volunteer-information.component.html:101,104</source>
+  We highly encourage applications through the portal. Alternatively, you can apply paper based by downloading the
+  following forms:
+</msg>
+  <msg id="5866254605255506989"><source>app/volunteer/volunteer-information/volunteer-information.component.html:108</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:61</source>English</msg>
+  <msg id="7633754075223722162"><source>app/volunteer/volunteer-information/volunteer-information.component.html:110</source><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:65</source>French</msg>
+  <msg id="3369306500614048672"><source>app/volunteer/volunteer-calendar/volunteer-calendar.component.html:1</source>Assigned Shifts</msg>
+  <msg id="6130555724994086833"><source>app/volunteer/volunteer-calendar/volunteer-calendar.component.html:17,18</source>Previous
+    </msg>
+  <msg id="4724773084929638439"><source>app/volunteer/volunteer-calendar/volunteer-calendar.component.html:26,27</source>Today
+    </msg>
+  <msg id="4722768884677368169"><source>app/volunteer/volunteer-calendar/volunteer-calendar.component.html:37,38</source>Next
+    </msg>
+  <msg id="3465962430409924123"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:3</source>Personal Information</msg>
+  <msg id="383585980201031726"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:21</source>Surname at Birth</msg>
+  <msg id="2896343608379732877"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:26</source>Citizenship</msg>
+  <msg id="3948439187870398089"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:33</source>Gender</msg>
+  <msg id="5065705258710983892"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:39,40</source>Male
+      </msg>
+  <msg id="3800822666214496044"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:43,44</source>Female
+      </msg>
+  <msg id="8651916739386693722"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:47,48</source><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:58,59</source>Other
+      </msg>
+  <msg id="8693603235657020323"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:53</source><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:86</source>Other</msg>
+  <msg id="1949800099101277248"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:59</source>Languages</msg>
+  <msg id="1421017762006488531"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:70</source>Other Languages</msg>
+  <msg id="1976792053725682091"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:75,76</source>Please select a Language or enter Other Languages
+  </msg>
+  <msg id="5247600156980506389"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:191</source>Home Telephone</msg>
+  <msg id="4052943207802056148"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:196</source>Business Telephone</msg>
+  <msg id="1549915947169213812"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:200</source>Business Extension</msg>
+  <msg id="7194617211572804196"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:206</source>Other Telephone</msg>
+  <msg id="1673662522816566265"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:210</source>Other Extension</msg>
+  <msg id="3055494018090915236"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:216</source>I agree that I may be contacted at my place of work (optional)</msg>
+  <msg id="469104618761699541"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:223</source>I am of the age of majority</msg>
+  <msg id="4292772646136831723"><source>app/volunteer/volunteer-registration/volunteer-registration-contact/volunteer-registration-contact.component.html:228</source>I am a citizen of Canada or am a resident of Canada for more than 5 years</msg>
+  <msg id="7815510943633048367"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:3</source>Security Information</msg>
+  <msg id="986113911462407151"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:6</source>Region where you wish to volunteer</msg>
+  <msg id="5400262730166208187"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:16</source>Location where you wish to volunteer</msg>
+  <msg id="3018032020024723824"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:28</source>Are you on an inmate&apos;s visiting list?</msg>
+  <msg id="1411397343763367662"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:34</source>Do you personally know any incarcerated offenders or anyone under federal jurisdiction?</msg>
+  <msg id="5455734935590859347"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:40</source>Please provide the inmate name(s) and the location of these offender(s)</msg>
+  <msg id="9204404158267906605"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:46</source>Have you been convicted of a criminal offence of which a pardon has not been granted?</msg>
+  <msg id="6424793030265638694"><source>app/volunteer/volunteer-registration/volunteer-registration-security/volunteer-registration-security.component.html:52</source>Do you have any outstanding charges before the courts?</msg>
+  <msg id="5251733756275934950"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:3</source>First Emergency Contact</msg>
+  <msg id="7446431770884818509"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:6</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:83</source>Name(s)</msg>
+  <msg id="6304432362546770951"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:11</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:88</source>Address</msg>
+  <msg id="6239757213033297709"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:23,24</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:50,51</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:103,104</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:132,133</source>Home
+      </msg>
+  <msg id="5437186360677222405"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:27,28</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:54,55</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:107,108</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:136,137</source>Work
+      </msg>
+  <msg id="1033198310167786026"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:31,32</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:58,59</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:111,112</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:140,141</source>Cell
+      </msg>
+  <msg id="4161293918559617664"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:62,63</source><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:144,145</source>None
+      </msg>
+  <msg id="817287438698273056"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:73</source>Second Emergency Contact</msg>
+  <msg id="9201075345495516059"><source>app/volunteer/volunteer-registration/volunteer-registration-emergency-contact/volunteer-registration-emergency-contact.component.html:78,79</source>Second Emergency Contact
+    </msg>
+  <msg id="3398353192845179101"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:3</source>Experience</msg>
+  <msg id="7972352783561982576"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:8</source>Have you had any previous work and/or volunteer experiences?</msg>
+  <msg id="7321105326778407932"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:14</source>Describe briefly indicating the names of any organizations involved.</msg>
+  <msg id="7558855081923914857"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:20</source>Do you have any affiliations with community groups? (Churches, service organizations, etc)</msg>
+  <msg id="4600510833143574465"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:26</source><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:39</source><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:66</source>Please specify.</msg>
+  <msg id="241270713698713516"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:33</source>Are you currently volunteering or applying to volunteer at any other federal institution, Parole Office, or other CSC facilities?</msg>
+  <msg id="1391097771604443467"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:44</source>How did you hear about volunteering with CSC?</msg>
+  <msg id="5834984396738010394"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:50,51</source>From a friend
+      </msg>
+  <msg id="3365180877683718789"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:54,55</source>From a colleague
+      </msg>
+  <msg id="6836109442447309558"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:73</source>Please describe special skills or area of expertise that you bring to this volunteer role.</msg>
+  <msg id="4661325307467542063"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:79</source>Why do you want to volunteer in the selected role?</msg>
+  <msg id="4737127925667335974"><source>app/volunteer/volunteer-registration/volunteer-registration-experience/volunteer-registration-experience.component.html:85</source>What days and times are you available?</msg>
+  <msg id="5238899671477454941"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:3</source>Volunteer Activities</msg>
+  <msg id="3571916012346586547"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:7</source>What are you applying for?</msg>
+  <msg id="6818608313636175956"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:13,14</source>CAC
+      </msg>
+  <msg id="4982979821226173079"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:17,18</source>REAC
+      </msg>
+  <msg id="7116591921661964705"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:21,22</source>General Volunteering
+      </msg>
+  <msg id="2128374810993152312"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:28</source>Applying For</msg>
+  <msg id="5639242085083784976"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:35</source>Religious Programs</msg>
+  <msg id="6116960867334177107"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:40</source>Counselling/Mentoring</msg>
+  <msg id="8020402390620783618"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:45</source>Education</msg>
+  <msg id="9120405597407008903"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:52</source>Arts and Crafts</msg>
+  <msg id="8425235344284141328"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:57</source><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:74</source>Non-Security Escort</msg>
+  <msg id="2885560012961480193"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:62</source><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:79</source>Restorative Justice</msg>
+  <msg id="4017886745000370074"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:69</source>Leisure Activities</msg>
+  <msg id="342418966251655499"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:91,92</source>Please choose a reason for applying
+    </msg>
+  <msg id="5069222283393802080"><source>app/volunteer/volunteer-registration/volunteer-registration-activities/volunteer-registration-activities.component.html:99</source>Please provide reasons for your choice(s)</msg>
+  <msg id="4161176237158977030"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:3</source>First Reference</msg>
+  <msg id="5701618810648052610"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:11</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:54</source>Title</msg>
+  <msg id="4768749765465246664"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:21</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:64</source>Email</msg>
+  <msg id="4806727909300114511"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:25,26</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:68,69</source>Please enter a Telephone or Email to contact reference
+  </msg>
+  <msg id="7612675227076281553"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:30</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:73</source>Relationship</msg>
+  <msg id="8142247455139357582"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:36,37</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:79,80</source>Professional
+      </msg>
+  <msg id="6535141349910498796"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:40,41</source><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:83,84</source>Personal
+      </msg>
+  <msg id="2223129021354667110"><source>app/volunteer/volunteer-registration/volunteer-registration-reference/volunteer-registration-reference.component.html:46</source>Second Reference</msg>
+  <msg id="8648980505037274391"><source>app/volunteer/volunteer-registration/volunteer-registration-agreement/volunteer-registration-agreement.component.html:7,8</source>I hereby certify that the information I provided is true and correct to the best of my
+                     knowledge. I understand that a false statement may disqualify me from the application process.</msg>
+  <msg id="4754669945446297830"><source>app/volunteer/volunteer-registration/volunteer-registration-agreement/volunteer-registration-agreement.component.html:13</source>I agree to the terms and conditions.</msg>
+  <msg id="8827108136579802568"><source>app/volunteer/volunteer-registration/volunteer-registration-stepper/volunteer-registration-stepper.component.html:1</source>Volunteer Application</msg>
+  <msg id="6714456069340765745"><source>app/volunteer/volunteer-registration/volunteer-registration-conclusion/volunteer-registration-conclusion.component.html:1</source>Submitted Volunteer Application</msg>
+  <msg id="4449320483882450835"><source>app/volunteer/volunteer-registration/volunteer-registration-conclusion/volunteer-registration-conclusion.component.html:3,5</source>
+  Your application has been submitted successfully! You will receive a confirmation by email.
+</msg>
+  <msg id="3004900768757233609"><source>app/volunteer/volunteer-registration/volunteer-registration-conclusion/volunteer-registration-conclusion.component.html:7,9</source>
+  Thank you for applying!
+</msg>
+</messagebundle>

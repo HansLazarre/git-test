@@ -1,0 +1,43 @@
+<h1 i18n>Login</h1>
+
+<p i18n>
+  To submit an application to become a Stakeholder with CSC and/or a Volunteer with CSC, you must first have an
+  account with the Engagement Portal.
+</p>
+
+<p i18n>
+  Creating an account will grant you access to some of the Engagement Portal's features, such as participating in
+  various Forums on themes related to correctional process, community reintegration, recruitment, etc.
+</p>
+
+<p i18n>
+  If you already have an account, please login below. If you do not have an account, click on the "Create Account"
+  button below.
+</p>
+
+<form [formGroup]="form">
+
+  <div *ngIf="success === false" class="mat-error form-field-margin"
+       i18n>Login error occurred
+  </div>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Enter your email"
+           [formControl]="form.get('email')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Enter your password"
+           [type]="hidePassword ? 'password' : 'text'"
+           [formControl]="form.get('password')">
+
+    <mat-icon matSuffix (click)="hidePassword = !hidePassword">
+      {{hidePassword ? 'visibility_off' : 'visibility'}}
+    </mat-icon>
+  </mat-form-field>
+
+  <div class="form-field-margin">
+    <button mat-flat-button color="primary" (click)="login()" [disabled]="sending" i18n>Login</button>
+    <button mat-stroked-button color="primary" routerLink="/signup" i18n>Create Account</button>
+  </div>
+</form>

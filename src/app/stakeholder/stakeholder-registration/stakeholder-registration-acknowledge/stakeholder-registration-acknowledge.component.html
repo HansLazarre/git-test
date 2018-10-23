@@ -1,0 +1,18 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Agreement</h3>
+
+  <div class="form-group-margin">
+    <rs-checkbox [rsRequired]="true" i18n-rsLabel
+                 rsLabel="I acknowledge that all the information is truthful to the best of my knowledge"
+                 [rsFormControl]="regAttrForm.get('csc_acknowledgeandsubmit')"></rs-checkbox>
+  </div>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="finish()" [disabled]="sending" i18n>Finish
+    </button>
+  </div>
+</form>

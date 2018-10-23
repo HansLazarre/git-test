@@ -1,0 +1,94 @@
+<h2 mat-dialog-title i18n>Organization Details</h2>
+
+<mat-dialog-content>
+
+  <h4>{{organization.name}}</h4>
+
+  <mat-list>
+    <mat-list-item *ngIf="organization.address1">
+      <span i18n>Physical Address:</span>
+      {{organization.address1}}
+    </mat-list-item>
+
+    <mat-list-item *ngIf="organization.address2">
+      <span i18n>Mailing Address:</span>
+      {{organization.address2}}
+    </mat-list-item>
+
+    <mat-list-item *ngIf="organization.telephone">
+      <span i18n>Telephone:</span>
+      <a href="tel: {{organization.telephone}}">{{organization.telephone}}</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="organization.email">
+      <span i18n>Email:</span>
+      <a href="mailto: {{organization.email}}">{{organization.email}}</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="organization.website">
+      <span i18n>Website:</span>
+      <a href="{{organization.website}}">{{organization.website}}</a>
+
+    </mat-list-item>
+
+    <mat-list-item *ngIf="organization.typename">
+      <span i18n>Organization Type:</span>
+      {{organization.typename}}
+    </mat-list-item>
+  </mat-list>
+
+  <h4 *ngIf="affiliations.length > 0" i18n>Affiliations</h4>
+
+  <mat-list *ngFor="let affiliation of affiliations; let first = first">
+    <mat-divider *ngIf="! first"></mat-divider>
+
+    <div>
+
+      <div class="float-left">
+        <h5>{{affiliation.contact_name}}</h5>
+      </div>
+
+      <div class="float-right">
+        <button *ngIf="organization.isowner" mat-flat-button color="primary"
+                (click)="unaffiliate(affiliation)" i18n>
+          Unaffilate
+        </button>
+      </div>
+
+      <div class="clear-fix"></div>
+
+    </div>
+
+    <mat-list-item *ngIf="affiliation.role">
+      <span i18n>Role:</span>
+      {{affiliation.role}}
+    </mat-list-item>
+
+    <mat-list-item *ngIf="affiliation.telephone">
+      <span i18n>Telephone:</span>
+      <a href="tel: {{affiliation.telephone}}">{{affiliation.telephone}}</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="affiliation.email">
+      <span i18n>Email:</span>
+      <a href="mailto: {{affiliation.email}}">{{affiliation.email}}</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="affiliation.linkedin">
+      <a href="{{affiliation.linkedin}}" i18n>LinkedIn</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="affiliation.facebook">
+      <a href="{{affiliation.facebook}}" i18n>Facebook</a>
+    </mat-list-item>
+
+    <mat-list-item *ngIf="affiliation.twitter">
+      <a href="{{affiliation.twitter}}" i18n>Twitter</a>
+    </mat-list-item>
+
+  </mat-list>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-stroked-button color="primary" [mat-dialog-close]="true" i18n>Close</button>
+</mat-dialog-actions>

@@ -1,0 +1,198 @@
+<form [formGroup]="form">
+
+  <h1 i18n>Organization Registration</h1>
+
+  <h3 i18n>Organization Information</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Name"
+           [formControl]="orgAttrForm.get('csc_organizationname')">
+  </mat-form-field>
+
+  <rs-email [rsRequired]="true" [rsFormControl]="orgAttrForm.get('emailaddress')"
+            i18n-rsLabel rsLabel="Email">
+  </rs-email>
+
+  <mat-form-field>
+    <mat-select required i18n-placeholder placeholder="Type"
+                [formControl]="orgRefsTypeForm.get('Id')">
+      <mat-option *ngFor="let type of types" [value]="type.id">{{type.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgRefsSubTypeForm.get('Id')">
+    <mat-select required i18n-placeholder placeholder="Subtype"
+                [formControl]="orgRefsSubTypeForm.get('Id')">
+      <mat-option *ngFor="let subtype of subtypes" [value]="subtype.id">{{subtype.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  <h3 i18n>Partnership Types</h3>
+
+  <div class="form-field-margin">
+    <div xLayout="row" fxLayout.xs="column">
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_rehabilitative')"
+                     i18n-rsLabel rsLabel="Rehabilitative"></rs-checkbox>
+      </div>
+
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_speicalinterestgroup')"
+                     i18n-rsLabel rsLabel="Special Interest Group"></rs-checkbox>
+      </div>
+
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_supportgroup')"
+                     i18n-rsLabel rsLabel="Support Group"></rs-checkbox>
+      </div>
+    </div>
+
+    <div xLayout="row" fxLayout.xs="column">
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_criminaljusticepartners')"
+                     i18n-rsLabel rsLabel="Criminal Justice Partners"></rs-checkbox>
+      </div>
+
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_legislative')"
+                     i18n-rsLabel rsLabel="Legislative"></rs-checkbox>
+      </div>
+
+      <div fxFlex>
+        <rs-checkbox [rsFormControl]="orgAttrForm.get('csc_otherlevelsofgovernment')"
+                     i18n-rsLabel rsLabel="Other Levels of Government"></rs-checkbox>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="orgAttrForm.hasError('partnershipType')" class="mat-error form-field-margin"
+       i18n>Please select a partnership type
+  </div>
+
+  <h3 i18n>Physical Address</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_line1'))"
+           [formControl]="orgAttrForm.get('address1_line1')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_line2'))"
+           [formControl]="orgAttrForm.get('address1_line2')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('csc_address1_city'))"
+           [formControl]="orgAttrForm.get('csc_address1_city')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_postofficebox'))"
+           [formControl]="orgAttrForm.get('address1_postofficebox')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_stateorprovince'))"
+           [formControl]="orgAttrForm.get('address1_stateorprovince')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_postalcode'))"
+           [formControl]="orgAttrForm.get('address1_postalcode')">
+
+    <mat-error
+      *ngIf="orgAttrForm.get('address1_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address1_country'))"
+           [formControl]="orgAttrForm.get('address1_country')">
+  </mat-form-field>
+
+
+  <h3 i18n>Mailing Address</h3>
+
+  <div class="form-field-margin">
+    <mat-checkbox color="primary" [value]="true"
+                  [formControl]="form.get('mailingAddressSame')"
+                  i18n>Mailing Address is the same as Physical Address
+    </mat-checkbox>
+  </div>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_line1')">
+    <input matInput required i18n-placeholder placeholder="Address Line 1"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_line1'))"
+           [formControl]="orgAttrForm.get('address2_line1')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_line2')">
+    <input matInput i18n-placeholder placeholder="Address Line 2"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_line2'))"
+           [formControl]="orgAttrForm.get('address2_line2')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_city')">
+    <input matInput required i18n-placeholder placeholder="City"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_city'))"
+           [formControl]="orgAttrForm.get('address2_city')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_postofficebox')">
+    <input matInput i18n-placeholder placeholder="P.O. Box"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_postofficebox'))"
+           [formControl]="orgAttrForm.get('address2_postofficebox')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_stateorprovince')">
+    <input matInput required i18n-placeholder placeholder="Province/Territory"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_stateorprovince'))"
+           [formControl]="orgAttrForm.get('address2_stateorprovince')">
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_postalcode')">
+    <input matInput required i18n-placeholder placeholder="Postal Code"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_postalcode'))"
+           [formControl]="orgAttrForm.get('address2_postalcode')">
+
+    <mat-error
+      *ngIf="orgAttrForm.get('address2_postalcode').hasError('postalCode')"
+      i18n>Invalid postal code
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field *ngIf="orgAttrForm.get('address2_country')">
+    <input matInput required i18n-placeholder placeholder="Country"
+           (input)="formUtil.formatUpperCase(orgAttrForm.get('address2_country'))"
+           [formControl]="orgAttrForm.get('address2_country')">
+  </mat-form-field>
+
+
+  <h3 i18n>Telephone</h3>
+
+  <rs-telephone
+    [rsRequired]="true"
+    [rsFormControl]="orgAttrForm.get('address1_telephone1')"
+    i18n-rsLabel rsLabel="Primary Telephone">
+  </rs-telephone>
+
+  <rs-telephone
+    [rsFormControl]="orgAttrForm.get('address1_telephone2')"
+    i18n-rsLabel rsLabel="Secondary Telephone">
+  </rs-telephone>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-raised-button color="primary" (click)="finish()" [disabled]="sending" i18n>Finish</button>
+  </div>
+</form>

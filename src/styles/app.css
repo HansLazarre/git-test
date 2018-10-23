@@ -1,0 +1,28 @@
+/*
+ * App specific styles, these will may or may not be reusable across products
+ */
+
+mat-form-field {
+  display: block !important;
+  max-width: 500px !important;
+}
+
+textarea.mat-input-element {
+  overflow-y: hidden !important;
+}
+
+.button-group > button {
+  margin-right: 15px !important;
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+a {
+  font-weight: 400;
+  cursor: pointer;
+  color: rgb(41, 83, 118);
+  text-decoration: rgb(41, 83, 118) underline;
+}

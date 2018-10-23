@@ -1,0 +1,95 @@
+<form [formGroup]="form">
+
+  <h3 i18n>First Reference</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Name"
+           [formControl]="regAttrForm.get('csc_reference1name')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Title"
+           [formControl]="regAttrForm.get('csc_reference1title')">
+  </mat-form-field>
+
+  <rs-telephone
+    [rsFormControl]="regAttrForm.get('csc_reference1telephone')"
+    i18n-rsLabel rsLabel="Telephone">
+  </rs-telephone>
+
+  <rs-email [rsFormControl]="regAttrForm.get('csc_reference1email')"
+            i18n-rsLabel rsLabel="Email">
+  </rs-email>
+
+  <div *ngIf="regForm.hasError('contact1')" class="mat-error form-field-margin"
+       i18n>Please enter a Telephone or Email to contact reference
+  </div>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_reference1relationship'))">
+
+    <h5 i18n>Relationship</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_reference1relationship')">
+
+      <mat-radio-button color="primary" [value]="this.Relationship.Professional"
+                        i18n>Professional
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.Relationship.Personal"
+                        i18n>Personal
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+
+  <h3 i18n>Second Reference</h3>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Name"
+           [formControl]="regAttrForm.get('csc_reference2name')">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput i18n-placeholder placeholder="Title"
+           [formControl]="regAttrForm.get('csc_reference2title')">
+  </mat-form-field>
+
+  <rs-telephone
+    [rsFormControl]="regAttrForm.get('csc_reference2telephone')"
+    i18n-rsLabel rsLabel="Telephone">
+  </rs-telephone>
+
+  <rs-email [rsFormControl]="regAttrForm.get('csc_reference2email')"
+            i18n-rsLabel rsLabel="Email">
+  </rs-email>
+
+  <div *ngIf="regForm.hasError('contact2')" class="mat-error form-field-margin"
+       i18n>Please enter a Telephone or Email to contact reference
+  </div>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_reference2relationship'))">
+
+    <h5 i18n>Relationship</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_reference2relationship')">
+
+      <mat-radio-button color="primary" [value]="this.Relationship.Professional"
+                        i18n>Professional
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="this.Relationship.Personal"
+                        i18n>Personal
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

@@ -1,0 +1,367 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Services Offered</h3>
+
+  <h5 i18n>Accommodations</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_hostels')"
+                    i18n>Hostels
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_privatehomeplacement')"
+                    i18n>Private Home Placements (PHP)
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_alternativecommunitybeds')"
+                    i18n>Alternative Community Beds (ACB)
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_supervisedapartments')"
+                    i18n>Supervised Apartments
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+
+  <h5 i18n>Education/Academic Services</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_adult')"
+                    i18n>Adult
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_postsecondary')"
+                    i18n>Post Secondary
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_englishasasecondlanguage')"
+                    i18n>English as a Second Language
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_generalequivalencydegree')"
+                    i18n>General Equivalency Degree
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_research')"
+                    i18n>Research
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_diploma')"
+                    i18n>Diploma
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_certificate')"
+                    i18n>Certificate
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_apprenticeship')"
+                    i18n>Apprenticeship
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex></div>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+
+  <h5 i18n>Employment Services for incarcerated and/or community supervised offenders</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_employmentinformation')"
+                    i18n>Employment Information
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_trainingskillsdevelopment')"
+                    i18n>Training / Skills Development
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_employmentreferralservice')"
+                    i18n>Employment Referral Service
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <mat-checkbox color="primary"
+                  [formControl]="regAttrForm.get('csc_employer')"
+                  i18n>Employer
+    </mat-checkbox>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+
+  <h5 i18n>Services offered to which Religious Faith Groups</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_buddhist')"
+                    i18n>Buddhist
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_christian')"
+                    i18n>Christian
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_hindu')"
+                    i18n>Hindu
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_islam')"
+                    i18n>Islam
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_jewish')"
+                    i18n>Jewish
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_rastafarian')"
+                    i18n>Rastafarian
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_sikh')"
+                    i18n>Sikh
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_traditionalspirituality')"
+                    i18n>Traditional Spirituality
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_wiccanpagan')"
+                    i18n>Wiccan/Pagan
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <h5 i18n>Legal Services</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_criminal')"
+                    i18n>Criminal
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_family')"
+                    i18n>Family
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_civil')"
+                    i18n>Civil
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+
+  <h5 i18n>Health Services</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_generalhealth')"
+                    i18n>General Health
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_mentalhealth')"
+                    i18n>Mental Health
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex></div>
+
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <h5 i18n>Counselling Services</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_angermgmtconflictresolution')"
+                    i18n>Anger Management/Conflict Resolution
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_communityoutreacheducation')"
+                    i18n>Community Outreach/Education
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_emotionalsupport')"
+                    i18n>Emotional Support
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_employment')"
+                    i18n>Employment
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_familysupport')"
+                    i18n>Family Support
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_health')"
+                    i18n>Health
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_housingandfinancialsupport')"
+                    i18n>Housing and Financial Support
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_lifeskills')"
+                    i18n>Life Skills
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_trauma')"
+                    i18n>Trauma
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_reintergration')"
+                    i18n>Reintegration
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_substanceabuse')"
+                    i18n>Substance Abuse Interventions
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary" [formControl]="regAttrForm.get('csc_sexualabuse')"
+                    i18n>Sexual Abuse
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div *ngIf="regAttrForm.hasError('offered')" class="mat-error form-field-margin"
+       i18n>Please select a service offered
+  </div>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

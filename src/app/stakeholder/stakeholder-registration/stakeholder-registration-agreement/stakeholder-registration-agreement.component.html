@@ -1,0 +1,38 @@
+<form>
+
+  <h3 i18n>Privacy Notice</h3>
+
+  <p i18n>
+    The information you provide is to support Correctional Service Canada (CSC) in providing. Your participation is
+    voluntary and is based on your consent.
+  </p>
+
+  <p i18n>
+    Your personal information is administered in accordance with the federal Privacy Act. As such, you have the
+    right to request access to your personal information held by and the right to ensure that the information is
+    safeguarded and retained according to the retention periods set out in the federal Privacy Act. Furthermore, you
+    have the right to ensure that the information is accurate and up-to-date. Please contact Correctional Service
+    Canada’s Access to Information and Privacy Division at GEN-NHQATIP-AIPRP@CSC-SCC.GC.CA with any questions or
+    concerns you may have.
+  </p>
+
+  <p i18n>
+    Your personal information will be retained in Personal Information Bank. Instructions for obtaining this
+    information are outlined in the government publication InfoSource which is available online on CSC’s website at:
+    <a href="http://www.csc-scc.gc.ca/info-source/index-eng.shtml">
+      http://www.csc-scc.gc.ca/info-source/index-eng.shtml
+    </a>
+  </p>
+
+  <div class="form-group-margin">
+    <rs-checkbox [rsRequired]="true" i18n-rsLabel rsLabel="Agree to Terms and Conditions"
+                 [rsFormControl]="regAttrForm.get('csc_agreetotermsandconditions')"></rs-checkbox>
+  </div>
+
+  <br>
+
+  <div>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

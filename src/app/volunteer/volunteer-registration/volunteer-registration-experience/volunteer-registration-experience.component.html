@@ -1,0 +1,95 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Experience</h3>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_previousworkvolunteerexperience')"
+    i18n-rsLabel rsLabel="Have you had any previous work and/or volunteer experiences?">
+  </rs-yes-no-opts>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_previousworkvolunteerexperiencedetails')"
+    i18n-rsLabel rsLabel="Describe briefly indicating the names of any organizations involved">
+  </rs-textarea>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_affiliationscommunitygroups')"
+    i18n-rsLabel rsLabel="Do you have any affiliations with community groups? (Churches, service organizations, etc)">
+  </rs-yes-no-opts>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_affiliationscommunitygroupsdetails')"
+    i18n-rsLabel rsLabel="Please specify">
+  </rs-textarea>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_currentlyvolunteeringapplyingtovolunteerw')"
+    i18n-rsLabel
+    rsLabel="Are you currently volunteering or applying to volunteer at any other federal institution, Parole Office, or other CSC facilities?">
+  </rs-yes-no-opts>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_currentlyvolunteeringapplyingtovolunteerd')"
+    i18n-rsLabel rsLabel="Please specify">
+  </rs-textarea>
+
+  <div class="form-group-margin" [ngClass]="fieldClass(regOptsForm.get('csc_howdidtheyhearaboutvolunteeringwithcsc'))">
+
+    <h5 i18n>How did you hear about volunteering with CSC?</h5>
+
+    <mat-radio-group required class="rs-radio-group rs-required"
+                     [formControl]="regOptsForm.get('csc_howdidtheyhearaboutvolunteeringwithcsc')">
+
+      <mat-radio-button color="primary" [value]="HearAbout.Friend"
+                        i18n>From a friend
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="HearAbout.Colleague"
+                        i18n>From a colleague
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="HearAbout.Other"
+                        i18n>Other
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_howdidtheyhearaboutvolunteeringdetails')"
+    i18n-rsLabel rsLabel="Please specify">
+  </rs-textarea>
+
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_specialskillsorexpertise')"
+    i18n-rsLabel rsLabel="Please describe special skills or area of expertise that you bring to this volunteer role">
+  </rs-textarea>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_whydoyouwanttovolunteer')"
+    i18n-rsLabel rsLabel="Why do you want to volunteer in the selected role">
+  </rs-textarea>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_availability')"
+    i18n-rsLabel rsLabel="What days and times are you available">
+  </rs-textarea>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

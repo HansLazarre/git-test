@@ -1,0 +1,35 @@
+<h1 i18n>Volunteer Application</h1>
+
+<mat-horizontal-stepper #stepper
+                        [linear]="true"
+                        (selectionChange)="selectionChange()">
+
+  <mat-step [stepControl]="volunteerRegContact.form">
+    <app-volunteer-registration-contact></app-volunteer-registration-contact>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerRegSecurity.form">
+    <app-volunteer-registration-security></app-volunteer-registration-security>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerRegExperience.form">
+    <app-volunteer-registration-experience></app-volunteer-registration-experience>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerRegActivities.form">
+    <app-volunteer-registration-activities></app-volunteer-registration-activities>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerRegReference.form">
+    <app-volunteer-registration-reference></app-volunteer-registration-reference>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerRegEmergencyContact.form">
+    <app-volunteer-registration-emergency-contact></app-volunteer-registration-emergency-contact>
+  </mat-step>
+
+  <mat-step [stepControl]="volunteerReAgreement.form">
+    <app-volunteer-registration-agreement></app-volunteer-registration-agreement>
+  </mat-step>
+
+</mat-horizontal-stepper>

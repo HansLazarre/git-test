@@ -1,0 +1,44 @@
+<h1 i18n>My Volunteers</h1>
+
+<div class="mat-elevation-z0">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Name</th>
+      <td mat-cell *matCellDef="let volunteer">
+        <a routerLink="/volunteer-update/{{volunteer.contactid}}">{{volunteer.name}}</a>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Email</th>
+      <td mat-cell *matCellDef="let volunteer">
+        {{volunteer.email}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="telephone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Telephone</th>
+      <td mat-cell *matCellDef="let volunteer">
+        {{volunteer.telephone}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>City</th>
+      <td mat-cell *matCellDef="let volunteer">
+        <span matTooltip="{{volunteer.address}}">{{volunteer.city}}</span>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="availability">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header i18n>Availability</th>
+      <td mat-cell *matCellDef="let volunteer">
+        {{volunteer.availability}}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

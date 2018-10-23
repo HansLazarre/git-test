@@ -1,0 +1,60 @@
+<h1 i18n>
+  Welcome to your Engagement Portal
+</h1>
+
+<p i18n>Designed to bring together CSC's partners, stakeholders and volunteers for ongoing dialogue, consultation and
+  collaboration, the EP will enable to to connect with an on-line community of like-minded individuals and organizations
+  - a way to engage with it's stakeholders</p>
+
+<slideshow [height]="'400px'"
+           [minHeight]="'400px'"
+           [autoPlay]="true"
+           [showArrows]="true"
+           [showDots]="true"
+           [imageUrls]="imageUrlArray"
+           [lazyLoad]="imageUrlArray?.length > 1"
+           [autoPlayWaitForLazyLoad]="true">
+</slideshow>
+
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly none">
+
+  <div fxFlex="50">
+    <h4 i18n>Engagement and Communications</h4>
+
+    <p i18n>The EP will serve asa a modernized stakeholder repository, while acting as a collaboration space to support,
+      sustain and manage ongoing community engagement initiatives. A few features of the RP:</p>
+
+    <ul>
+      <li i18n>A centralized, searchable database of advisory groups, CSC partners and stakeholders</li>
+
+      <li i18n>The ability to collaborate and consult on documents with partners and stakeholders remotely on various
+        projects and tasks
+      </li>
+
+      <li i18n>Interaction, including e-communications, questionnaires/analytics</li>
+
+      <li i18n>A document repository of resource material, including training and orientation</li>
+
+      <li i18n>Online discussion forums</li>
+    </ul>
+  </div>
+
+  <div fxFlex="50">
+    <h4 i18n>As a member, you can:</h4>
+    <ul>
+      <li i18n>Register yourself or your organization as a stakeholders</li>
+
+      <li i18n>Access a ceteralized, searchable database of CSC partners and stakeholders</li>
+
+      <li i18n>Search out community engagement events</li>
+
+      <li i18n>Collaborate with CSC and other stakeholders</li>
+
+      <li i18n>Take part in the online discussion forums</li>
+
+      <li i18n>Apply for volunteer positions</li>
+    </ul>
+  </div>
+</div>
+
+<app-features></app-features>

@@ -1,0 +1,11 @@
+<h2 mat-dialog-title i18n>Organization Affiliated</h2>
+
+<mat-dialog-content>
+  You are already affiliated with the organization {{organization.name}}
+</mat-dialog-content>
+
+<mat-dialog-actions class="button-group">
+  <button mat-stroked-button color="primary" [mat-dialog-close]="true" i18n>Close</button>
+  <button mat-raised-button color="primary" routerLink="/affiliations" [mat-dialog-close]="true" i18n>Affiliations
+  </button>
+</mat-dialog-actions>

@@ -1,0 +1,62 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Security Information</h3>
+
+  <mat-form-field>
+    <mat-select required i18n-placeholder placeholder="Region where you wish to volunteer"
+                [formControl]="regRefsRegionForm.get('Id')">
+      <mat-option *ngFor="let region of regions" [value]="region.id">{{region.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select required i18n-placeholder placeholder="Location where you wish to volunteer"
+                [formControl]="regRefsLocationForm.get('Id')">
+      <mat-option *ngFor="let location of locations" [value]="location.id">{{location.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_oninmatevisitinglist')"
+    i18n-rsLabel rsLabel="Are you on an inmate's visiting list?">
+  </rs-yes-no-opts>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_oninmatevisitinglistdetails')"
+    i18n-rsLabel rsLabel="Please provide the inmate name(s) and the location of these inmate(s)">
+  </rs-textarea>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_personallyknowsoffenders')"
+    i18n-rsLabel rsLabel="Do you personally know any incarcerated offenders or anyone under federal jurisdiction?">
+  </rs-yes-no-opts>
+
+  <rs-textarea
+    [rsRequired]="true"
+    [rsFormControl]="regAttrForm.get('csc_personallyknowsoffendersdetails')"
+    i18n-rsLabel rsLabel="Please provide the inmate name(s) and the location of these offender(s)">
+  </rs-textarea>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_convictedofcriminaloffenceswithnopardon')"
+    i18n-rsLabel rsLabel="Have you been convicted of a criminal offence of which a pardon has not been granted?">
+  </rs-yes-no-opts>
+
+  <rs-yes-no-opts
+    [rsRequired]="true"
+    [rsFormControl]="regOptsForm.get('csc_outstandingcharges')"
+    i18n-rsLabel rsLabel="Do you have any outstanding charges before the courts?">
+  </rs-yes-no-opts>
+
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

@@ -1,0 +1,28 @@
+<h2 mat-dialog-title i18n>Update Affiliate</h2>
+
+<mat-dialog-content [formGroup]="form">
+
+  <h4>{{affiliation.name}}</h4>
+
+  <mat-form-field>
+    <input matInput required i18n-placeholder placeholder="Role"
+           [formControl]="form.get('csc_role')">
+  </mat-form-field>
+
+  <rs-telephone [rsRequired]="true" i18n-rsLabel rsLabel="Telephone"
+                [rsFormControl]="form.get('csc_telephone')">
+  </rs-telephone>
+
+  <rs-email [rsRequired]="true" i18n-rsLabel rsLabel="Email"
+            [rsFormControl]="form.get('csc_email')">
+  </rs-email>
+
+  <h6 i18n>*This information is public</h6>
+
+</mat-dialog-content>
+
+<mat-dialog-actions class="button-group">
+  <button mat-stroked-button color="primary" [mat-dialog-close]="true" i18n>Close</button>
+  <button mat-raised-button color="primary" (click)="update()" [disabled]="sending" i18n>Update</button>
+  <button mat-raised-button color="primary" (click)="unaffiliate()" [disabled]="sending" i18n>Unaffiliate</button>
+</mat-dialog-actions>

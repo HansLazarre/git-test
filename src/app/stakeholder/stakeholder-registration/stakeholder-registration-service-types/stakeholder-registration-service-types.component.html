@@ -1,0 +1,174 @@
+<form [formGroup]="form">
+
+  <h3 i18n>Services Offered</h3>
+
+  <div class="form-group-margin">
+
+    <h5 i18n>Languages Offered</h5>
+
+    <mat-radio-group class="rs-radio-group" [formControl]="regOptsForm.get('csc_preferredofficiallanguage')">
+      <mat-radio-button color="primary" [value]="862430000"
+                        i18n>English
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="862430001"
+                        i18n>French
+      </mat-radio-button>
+
+      <mat-radio-button color="primary" [value]="862430002"
+                        i18n>Both
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field class="full-width">
+    <input matInput i18n-placeholder placeholder="Please specify what other languages"
+           [formControl]="regAttrForm.get('csc_otherlanguagesspoken')">
+  </mat-form-field>
+
+  <div *ngIf="regForm.hasError('language')" class="mat-error form-field-margin"
+       i18n>Please select a Language or enter Other Languages
+  </div>
+
+
+  <h5 i18n>Offered to which genders</h5>
+
+  <div class="form-group-margin" xLayout="row" fxLayout.xs="column">
+
+    <mat-checkbox color="primary"
+                  [formControl]="regAttrForm.get('csc_men')"
+                  i18n>Men
+    </mat-checkbox>
+
+    <mat-checkbox color="primary"
+                  [formControl]="regAttrForm.get('csc_women')"
+                  i18n>Women
+    </mat-checkbox>
+  </div>
+
+  <rs-textarea
+    [rsFormControl]="regAttrForm.get('csc_sexother')"
+    i18n-rsLabel rsLabel="Please specify what other genders">
+  </rs-textarea>
+
+  <div *ngIf="regForm.hasError('gender')" class="mat-error form-field-margin"
+       i18n>Please select a Gender or enter Other Genders
+  </div>
+
+
+  <h5 i18n>Offered to which types of offenders</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_incarcerated')"
+                    i18n>Incarcerated
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_communitysupervised')"
+                    i18n>Community Supervised
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_highriskoffenders')"
+                    i18n>High Risk Offenders
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <h5 i18n>Offered to which groups</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_aged')"
+                    i18n>Aged
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_youth')"
+                    i18n>Youth
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_physicaldisability')"
+                    i18n>Physical Disability
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <div class="form-field-margin" xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_mentalhealthneeds')"
+                    i18n>Mental Health Needs
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_motherchild')"
+                    i18n>Mother-Child
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_ethnoculturalgroups')"
+                    i18n>Ethnocultural Groups
+      </mat-checkbox>
+    </div>
+  </div>
+
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <h5 i18n>Offered to which Indigenous groups</h5>
+
+  <div xLayout="row" fxLayout.xs="column">
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_inuit')"
+                    i18n>Inuit
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_metis')"
+                    i18n>Metis
+      </mat-checkbox>
+    </div>
+
+    <div fxFlex>
+      <mat-checkbox color="primary"
+                    [formControl]="regAttrForm.get('csc_firstnations')"
+                    i18n>First Nations
+      </mat-checkbox>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="button-group">
+    <button mat-stroked-button color="primary" matStepperPrevious i18n>Previous</button>
+    <button mat-raised-button color="primary" matStepperNext (click)="next()" i18n>Next</button>
+  </div>
+
+</form>

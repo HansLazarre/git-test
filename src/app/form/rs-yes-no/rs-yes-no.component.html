@@ -1,0 +1,13 @@
+<div class="rs-radio-field" [ngClass]="displayFieldCss()" *ngIf="rsFormControl">
+
+  <h5>{{rsLabel}}</h5>
+
+  <mat-radio-group class="rs-radio-group" [formControl]="rsFormControl">
+    <mat-radio-button color="primary" [value]="true"
+                      i18n>Yes
+    </mat-radio-button>
+    <mat-radio-button color="primary" [value]="false"
+                      i18n>No
+    </mat-radio-button>
+  </mat-radio-group>
+</div>

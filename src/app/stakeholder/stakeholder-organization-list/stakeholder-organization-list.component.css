@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+.dialog-button {
+  white-space: normal;
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dialog-button:hover {
+  text-decoration: underline;
+}

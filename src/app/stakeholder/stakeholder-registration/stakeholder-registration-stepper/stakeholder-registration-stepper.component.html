@@ -1,0 +1,31 @@
+<h1 i18n>Stakeholder Registration</h1>
+
+<mat-horizontal-stepper #stepper
+                        [linear]="true"
+                        (selectionChange)="selectionChange()">
+
+  <mat-step [stepControl]="stakeholderRegAgreement.form">
+    <app-stakeholder-registration-agreement></app-stakeholder-registration-agreement>
+  </mat-step>
+
+  <mat-step [stepControl]="stakeholderRegContact.form">
+    <app-stakeholder-registration-contact></app-stakeholder-registration-contact>
+  </mat-step>
+
+  <mat-step [stepControl]="stakeholderRegAbout.form">
+    <app-stakeholder-registration-about></app-stakeholder-registration-about>
+  </mat-step>
+
+  <mat-step [stepControl]="stakeholderRegServiceTypes.form">
+    <app-stakeholder-registration-service-types></app-stakeholder-registration-service-types>
+  </mat-step>
+
+  <mat-step [stepControl]="stakeholderRegServicesOffered.form">
+    <app-stakeholder-registration-services-offered></app-stakeholder-registration-services-offered>
+  </mat-step>
+
+  <mat-step [stepControl]="stakeholderRegAcknowledge.form">
+    <app-stakeholder-registration-acknowledge></app-stakeholder-registration-acknowledge>
+  </mat-step>
+
+</mat-horizontal-stepper>
