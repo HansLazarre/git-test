@@ -18,9 +18,10 @@ const headers = new HttpHeaders({
 @Injectable()
 export class AuthService {
 
-  public isAuthenticated = false;
-
+  public isAuthenticated = true;//false
+//hans test
   public redirectUrl = '/home';
+  //public redirectUrl = '/stakeholder/stakeholder-contact';
 
   public readonly loginRoute = ['/login'];
 

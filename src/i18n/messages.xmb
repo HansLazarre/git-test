@@ -143,7 +143,7 @@
   <msg id="4134147244760971282" desc="English/French language label"><source>app/shared/header/header.component.html:18</source>Français</msg>
   <msg id="5561142040999083264" desc="English/French Language link"><source>app/shared/header/header.component.html:18</source>/fr/</msg>
   <msg id="5083742282739839261"><source>app/shared/home/home.component.html:1,3</source>
-  Welcome to your Engagement Portal
+  Welcome to PARSS Portal
 </msg>
   <msg id="2316699692607183573"><source>app/shared/home/home.component.html:5,7</source>Designed to bring together CSC&apos;s partners, stakeholders and volunteers for ongoing dialogue, consultation and
   collaboration, the EP will enable to to connect with an on-line community of like-minded individuals and organizations

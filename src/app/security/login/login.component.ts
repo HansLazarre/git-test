@@ -35,10 +35,12 @@ export class LoginComponent implements OnInit {
 
   public login() {
 
-    if (!this.form.valid) {
+    //this.router.navigate([this.auth.redirectUrl]);
+        
+
+   if (!this.form.valid) {
       return;
     }
-
     this.sending = true;
 
     this.success = undefined;

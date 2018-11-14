@@ -17,15 +17,15 @@
         Home
       </a>
 
-      <a mat-list-item
+        <a mat-list-item
          class="font-weight-400" style="background-color: black; color: white;"
          i18n>Stakeholder
       </a>
-
+    
       <a mat-list-item routerLink="/stakeholder-information"
          i18n>Information
       </a>
-
+    
       <a mat-list-item routerLink="/stakeholder-registration/form"
          *ngIf="auth.stakeholderStatus === StakeholderStatus.NotRegistered"
          i18n>Registration
@@ -49,7 +49,7 @@
          *ngIf="auth.stakeholderStatus === StakeholderStatus.Approved"
          i18n>Register Organization
       </a>
-
+    
       <a mat-list-item routerLink="/owner-organizations"
          *ngIf="auth.isOrganizationOwner"
          i18n>My Organizations
@@ -105,7 +105,7 @@
 
       <app-header></app-header>
 
-      <app-banner i18n-bannerTitle bannerTitle="CSC's Engagement Portal"></app-banner>
+      <app-banner i18n-bannerTitle bannerTitle="PBC's Online Application Portal"></app-banner>
 
       <nav role="navigation" class="menu">
         <mat-toolbar color="primary">
@@ -126,8 +126,8 @@
               <mat-icon i18n-aria-label aria-label="Home">home</mat-icon>
               <ng-container i18n>Home</ng-container>
             </button>
-
-            <button mat-flat-button [matMenuTriggerFor]="menuStakeholder">
+<!--
+           <button mat-flat-button [matMenuTriggerFor]="menuStakeholder">
               <ng-container i18n>Stakeholder</ng-container>
               <mat-icon i18n-aria-label aria-label="Home">arrow_drop_down</mat-icon>
             </button>
@@ -136,7 +136,7 @@
               <button mat-menu-item routerLink="/stakeholder-information"
                       i18n>Information
               </button>
-              <button mat-menu-item routerLink="/stakeholder-registration/form"
+              <button mat-menu-item 
                       *ngIf="auth.stakeholderStatus === StakeholderStatus.NotRegistered"
                       i18n>Registration
               </button>
@@ -155,6 +155,7 @@
                       *ngIf="auth.stakeholderStatus === StakeholderStatus.Approved"
                       i18n>Register Organization
               </button>
+              
               <button mat-menu-item routerLink="/owner-organizations"
                       *ngIf="auth.isOrganizationOwner"
                       i18n>My Organizations
@@ -187,23 +188,23 @@
                       i18n>Update Info
               </button>
             </mat-menu>
-
+          
             <button mat-flat-button>
               <ng-container i18n>Forums</ng-container>
             </button>
-
+          -->
             <button mat-flat-button routerLink="/about">
-              <ng-container i18n>About Us</ng-container>
+              <ng-container i18n>Appy for Record Suspension</ng-container>
             </button>
-
-            <button mat-flat-button>
+          
+           <button mat-flat-button>
               <ng-container i18n>Contact Us</ng-container>
             </button>
-
+          
           </ng-container>
-
+        
           <span class="mat-toolbar-spacer"></span>
-
+        
           <ng-container *ngIf="auth.isAuthenticated; else login">
             <button mat-flat-button [ngClass]="(isHandset$ | async) ? 'button-mobile' : 'float-right'"
                     (click)="logout()"
@@ -214,7 +215,7 @@
 
           <ng-template #login>
             <button mat-flat-button [ngClass]="(isHandset$ | async) ? 'button-mobile' : 'float-right'"
-                    routerLink="/login">
+                    routerLink="/test">
               <span i18n>Login</span>
             </button>
           </ng-template>
